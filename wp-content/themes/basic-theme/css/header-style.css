@@ -882,6 +882,8 @@ span.burger__line:after {
 
     a.header__top__right__phone__link {
         font-size: 18px;
+        display: block;
+        text-align: center;
     }
 
     .header__top__right .button {
@@ -906,5 +908,15 @@ span.burger__line:after {
         width: 100%;
     }   
     
+    .mobile__menu li a {
+        font-size: 20px;
+        line-height: 2;
+        text-align: center;
+        display: block;
+    }
+
+    ul.header__menu__messengers {
+        justify-content: center;
+    }
 
 }

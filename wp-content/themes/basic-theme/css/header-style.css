@@ -902,9 +902,9 @@ span.burger__line:after {
         padding-bottom: 20px;
     }
 
-    .mobile__menu__inner._open{
- width: 80%;
-    }       
+    .mobile__menu__inner._open {
+        width: 100%;
+    }   
     
 
 }

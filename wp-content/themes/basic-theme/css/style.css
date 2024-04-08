@@ -831,12 +831,19 @@ p.popup-description {
 }
 
 .entry-post__inner__head {
+    display: flex;
+    flex-direction: column;
     padding: 20px 10px;
     width: 100%;
-    background: rgba(255, 255, 255, .75);
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
     backdrop-filter: blur(30px);
     position: absolute;
     bottom: 0;
+}
+
+.entry-post__inner__head .entry-post__excerpt {
+    height: 70px;
 }
 
 .entry-post__inner__head a.entry-post__inshortcode__more {
@@ -848,10 +855,21 @@ p.popup-description {
     border: none;
 }
 
-.entry-post__inner__head a.entry-post__inshortcode__more{
-    position:relative;
-    padding-bottom:3px;
-    display:inline;
+.entry-post__inner__head a.entry-post__inshortcode__more {
+    position: relative;
+    padding: 3px;
+    border-radius: 3px;
+    display: block;
+    width: 150px;
+    color: #000;
+    text-align: center;
+    background: #fff;
+}
+
+.entry-post__inner__head a.entry-post__inshortcode__more:hover{
+    background:var(--green);
+    color: #fff;
+    transition: all .3s linear;
 }
 
 .entry-post__inner__head a.entry-post__inshortcode__more:after{
@@ -1276,6 +1294,18 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         height: 230px;
     }
 
+    .entry-post__inner__head .entry-post__excerpt {
+        height: auto;
+        font-size: 14px;
+    }
+
+    .archive-posts__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
     
 }
 
@@ -1434,7 +1464,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         align-items: center;
         justify-content: center;
     }
-    
+
     section.page-section {
         padding-top: 180px;
     }
@@ -1460,6 +1490,36 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         line-height: 1.2;
         font-size: 18px !important;
     }
+
+    .archive-posts__grid a, .entry-post__inshortcode {
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+        position: relative;
+        border: 1px solid #cacaca;
+    }
+
+    .archive-posts__grid a img, .entry-post__inshortcode img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .entry-post__inner__head h3 {
+        font-size: 18px;
+    }
+    /* .entry-post__inner__head {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        width: 100%;
+        color: #fff;
+        background: #252525;
+        backdrop-filter: blur(30px);
+        position: relative;
+        bottom: 0;
+    } */
 }
 
 @media (max-width: 360px){

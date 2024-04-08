@@ -1422,6 +1422,19 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
 }
 
 @media (max-width: 480px){
+
+    .section-hero__slider {
+        position: relative;
+        z-index: 5;
+        margin-top: 30px;
+        transform: none;
+    }
+
+    .section-hero__img .fixed-container {
+        align-items: center;
+        justify-content: center;
+    }
+    
     section.page-section {
         padding-top: 180px;
     }

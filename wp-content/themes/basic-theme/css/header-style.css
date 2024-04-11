@@ -735,10 +735,10 @@ span.burger__line:after {
         line-height: 2;
     }
 
-    body._fixed {
+    /* body._fixed {
         overflow: hidden;
         position: fixed;
-    }
+    } */
 
 
     .mobile__menu__inner {

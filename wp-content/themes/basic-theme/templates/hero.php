@@ -41,10 +41,17 @@
     </div>
 
 
+   
+
+
+
+
+
 </section>
 
 
 <div class="section-hero__slider">
+    <!-- <div class="fixed-container"> -->
     <?php
     if ($hero_slides = carbon_get_theme_option('hero-slider')) {
     ?>
@@ -102,4 +109,5 @@
         </div>
         <!-- </div> -->
     <?php } ?>
+    <!-- </div> -->
 </div>

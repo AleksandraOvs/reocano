@@ -2,10 +2,11 @@ const swiper = new Swiper('.hero-slider', {
   slidesPerView: 1.5,
   //spaceBetween: 20,
   // centeredSlides: true,
+  centeredSlides: true,
   loop: true,
-  grid: {
-    rows: 2
-  },
+  // grid: {
+  //   rows: 2
+  // },
    // direction: 'vertical',
     // loop: true,
     // autoplay: {
@@ -40,13 +41,13 @@ const swiper = new Swiper('.hero-slider', {
       },
       // when window width is >= 640px
       576: {
-          slidesPerView: 2.5,
+          slidesPerView: 3,
           spaceBetween: 5,
           slideToClickedSlide: true,
       },
 
       1400:{
-        slidesPerView: 3.5,
+        slidesPerView: 5,
           spaceBetween: 5,
           slideToClickedSlide: true,
       }

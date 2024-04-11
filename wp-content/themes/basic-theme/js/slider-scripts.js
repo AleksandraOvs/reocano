@@ -1,14 +1,17 @@
 const swiper = new Swiper('.hero-slider', {
   slidesPerView: 1.5,
-  spaceBetween: 20,
-  centeredSlides: true,
+  //spaceBetween: 20,
+  // centeredSlides: true,
   loop: true,
+  grid: {
+    rows: 2
+  },
    // direction: 'vertical',
     // loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
     //effect: "fade",
     // If we need pagination
     pagination: {
@@ -17,10 +20,10 @@ const swiper = new Swiper('.hero-slider', {
     },
   
     // Navigation arrows
-    // navigation: {
-    //   nextEl: '.hero-slider__button-next',
-    //   prevEl: '.hero-slider__button-prev',
-    // },
+    navigation: {
+      nextEl: '.hero-slider__button-next',
+      prevEl: '.hero-slider__button-prev',
+    },
 
     breakpoints: {
       // when window width is >= 320px
@@ -32,18 +35,19 @@ const swiper = new Swiper('.hero-slider', {
       // when window width is >= 480px
       480: {
           slidesPerView: 1.5,
-          spaceBetween: 20,
+          spaceBetween: 5,
           slideToClickedSlide: true,
       },
       // when window width is >= 640px
       576: {
           slidesPerView: 2.5,
-          spaceBetween: 20,
+          spaceBetween: 5,
           slideToClickedSlide: true,
       },
-      768:{
+
+      1400:{
         slidesPerView: 3.5,
-          spaceBetween: 20,
+          spaceBetween: 5,
           slideToClickedSlide: true,
       }
   }
@@ -72,4 +76,20 @@ const swiper = new Swiper('.hero-slider', {
       prevEl: '.services-slider__button-prev',
     },
    
+  })
+
+  $('.elementor-element-d04cf10').slick({
+    dots: true,
+    slidesToShow: 3.5,
+    arrows: true,
+    appendDots: $('.products__slider-dots'),
+    prevArrow: $('.products__slider-arrow_prev'),
+    nextArrow: $('.products__slider-arrow_next'),
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        adaptiveHeight: true,
+      }
+    }]
   })

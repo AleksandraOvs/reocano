@@ -59,6 +59,8 @@ Container::make('theme_options', 'Контакты')
             ->set_width(50),
             Field::make('text', 'crb_button_link', 'Ссылка кнопки')
             ->set_width(50),
+            Field::make('text', 'crb_hero-slider_head', 'Заголовок слайдера')
+            ->set_width(50),
             Field::make('complex', 'hero-slider', 'Слайдер на главном экране')
             ->add_fields(array (
                 Field::make('rich_text', 'hero-slider_content', 'Текст слайда')

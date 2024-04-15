@@ -1050,14 +1050,20 @@ p.popup-description {
     align-self: flex-end;
     display: flex;
     align-items: center;
-    padding: 3px 15px;
+    border-radius: 7px;
+    padding: 5px 25px;
     gap: 10px;
-    border-bottom: 1px solid var(--green);
+    font-size: 20px;
+    background: var(--green);
+    color: #fff;
+    border: 1px solid var(--green);
     transition: all .5s linear;
 }
 
 a.entry-post__programm__more:hover{
-    background: #eeeeee;
+    background: var(--black);
+    border:1px solid var(--black);
+    color:#fff;
     transition: all .5s linear;
 }
 

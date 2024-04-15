@@ -948,9 +948,9 @@ p.popup-description {
     margin-top: 30px;
 }
 
-.archive-posts__grid div:not(:last-child) {
+/* .archive-posts__grid div:not(:last-child) {
     margin-bottom: 30px;
-}
+} */
 
 /* .archive-posts__grid a{
     display: flex;
@@ -996,20 +996,26 @@ p.popup-description {
 .entry-post__programm__content {
     width: 100%;
     margin-top: 20px;
-    transition: opacity .5s ease-in;
+    transition: transform 2s linear;
 }
 /* 
 .entry-post__programm._open .entry-post__content {
     display: block;
 } */
+.entry-post__programm__content._open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 2s linear;
+}
 
 .entry-post__programm__content {
     display: none;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 2s linear;
 }
 
-.entry-post__programm__content._open {
-    display: block;
-}
 
 
 

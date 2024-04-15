@@ -18,14 +18,30 @@
             if (have_posts()) : ?>
                 <div class="archive-posts__grid">
                     <?php while (have_posts()) : the_post(); ?>
-                        <div class="entry-post__inshortcode">
+                        <div class="entry-post__programm">
+                            <a class="entry-post__programm__link" href="<?php echo the_permalink() ?>">
+                                <?php echo get_the_post_thumbnail() ?>
+                            </a>
 
-                            <?php echo get_the_post_thumbnail() ?>
-                            <div class="entry-post__inner__head">
-                                <h3><?php the_title(); ?></h3>
-                                <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
-                                <a href="/" class="entry-post__inshortcode__more">Подробнее</a>
+                            <div class="entry-post__inner__head__summary">
+                                <div class="entry-post__inner__head">
+                                    <h3><?php the_title(); ?></h3>
+                                    <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+                                </div>
+                                <a href="/" class="entry-post__programm__more">
+                                    <span>Подробнее</span>
+                                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.850211 4.76837e-07H7.15039C7.21418 0.000191212 7.2767 0.0169754 7.33123 0.0485463C7.38576 0.0801172 7.43024 0.125279 7.45987 0.179171C7.4895 0.233063 7.50316 0.293644 7.49939 0.354393C7.49561 0.415143 7.47454 0.47376 7.43845 0.523935L4.28836 4.86501C4.1578 5.045 3.8435 5.045 3.71259 4.86501L0.562503 0.523935C0.52604 0.473865 0.504658 0.415218 0.500679 0.354367C0.496699 0.293517 0.510275 0.23279 0.539932 0.178783C0.569588 0.124777 0.614191 0.0795579 0.668893 0.048038C0.723596 0.0165186 0.786306 -9.53674e-05 0.850211 4.76837e-07Z" fill="#111111" />
+                                    </svg>
+
+
+                                </a>
                             </div>
+
+                            <div class="entry-post__programm__content">
+                                <?php the_content() ?>
+                            </div>
+
 
                         </div>
                     <?php endwhile; ?>

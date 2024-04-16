@@ -30,7 +30,14 @@
 							endif;
 							?>
 						</a>
-						<h1><?php echo get_bloginfo('description') ?></h1>
+
+						<div class="header__top__left__content">
+							<h1><?php echo get_bloginfo('name') ?></h1>
+							<p><?php echo get_bloginfo('description') ?></p>
+						</div>
+
+
+						
 					</div>
 
 					<div class="header__top__right">

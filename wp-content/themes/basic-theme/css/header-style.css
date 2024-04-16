@@ -21,12 +21,23 @@ header.header {
     position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
     overflow: hidden;
     background: transparent;
     display: flex;
     justify-content: space-between;
     color: transparent;
+}
+
+.header__top:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #252525;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* .header__top:after {
@@ -91,11 +102,30 @@ span.sr-only {
     margin-bottom: 0;
 }
 
-.header__top__left h1 {
+/* .header__top__left h1 {
     visibility: hidden;
     margin-bottom: 0;
     font-size: 0.5px;
     font-weight: 300;
+} */
+
+.header__top__left h1 {
+    margin-bottom: 0;
+    color: var(--black);
+    font-size: 14px;
+    text-align: left;
+    font-weight: 300;
+    font-weight: 600;
+}
+
+.header__top__left{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.header__top__left__content h1, .header__top__left__content p {
+    color: #fff;
 }
 
 a.site-header__logo {
@@ -130,13 +160,14 @@ a.site-header__logo {
 
 a.header__top__right__phone__link {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     transition: all .3s linear;
 }
 
 nav ul.header__menu {
     display: flex;
-    column-gap:15px;
+    margin-top: 10px;
+    column-gap: 15px;
     justify-content: flex-end;
 }
 
@@ -192,8 +223,8 @@ li.social__item {
     width: 30px;
     height: 30px;
     padding: 5px;
-    border: 1.5px solid var(--black);
-    background: var(--black);
+    border: 1.5px solid var(--green);
+    background: var(--green);
     border-radius: 100%;
     transition: all .3s linear;
 }
@@ -203,8 +234,8 @@ li.social__item a {
 }
 
 li.social__item:hover {
-    background: var(--green);
-    border-color: var(--green);
+    background: var(--black);
+    border-color: var(--black);
     filter: drop-shadow(0 0 5px rgba(1, 175, 52, 0.5));
     transition: all .3s linear;
 }
@@ -226,14 +257,13 @@ li.social__item .social__link img {
 }
 
 .header__top__left {
-    width: 194px;
-    height: 100%;
+    width:40%;
     transition: all .5s ease-in;
 }
 
 .header a {
     display: block;
-    color: var(--black);
+    color: #fff;
     width: 100%;
     height: 100%;
     transition: all .3s linear;
@@ -243,6 +273,14 @@ li.social__item .social__link img {
     color: var(--green);
     transition: all .3s linear;
 }
+
+
+a.site-header__logo {
+    display: block;
+    width: 50px;
+    height: 70px;
+}
+
 
 ul.header__menu__messengers li {
     transform: none;
@@ -272,7 +310,7 @@ ul.header__menu__messengers li {
 .header__menu li a {
     display: block;
     letter-spacing: .05em;
-    color: var(--black);
+    color: #fff;;
     font-weight: 400;
     transition: all .3s linear;
 }
@@ -297,7 +335,7 @@ ul.header__menu__messengers li {
 }
 
 .sub-menu li:hover a {
-    color: rgba(22, 159, 219, 1);
+    color: var(--yellow);
 }
 
 .header__menu li {
@@ -446,15 +484,21 @@ span.burger__line:after {
 /*header scroll styles*/
 
 .header__top.header-scroll {
-    background: rgba(255, 255, 255, .45);
-    border-bottom: 1px solid #fff;
+    background: rgba(25, 25, 25, .8);
+    border-bottom: 1px solid #000;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     transition: all .3s linear;
+
 }
 
-.header__top.header-scroll .fixed-container .header__top__left .site-header__logo {
+/* .header__top.header-scroll .fixed-container .header__top__left .site-header__logo {
     width: 120px;
+} */
+
+.header__top.header-scroll:after {
+    width: 0;
+    transition: all .3s linear;
 }
 
 

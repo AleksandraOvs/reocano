@@ -476,6 +476,12 @@ img.hero-image {
     -webkit-backdrop-filter: blur(30px); */
 }
 
+a.hero-button.button.fill:hover {
+    background: #111;
+    color: #fff;
+    transition: all .3s linear;
+}
+
 /* .section-hero__img__left-content:after{
     content: '';
     width: 160px;

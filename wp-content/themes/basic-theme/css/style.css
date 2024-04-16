@@ -1428,10 +1428,10 @@ ul.breadcrumbs__list {
 }
 
 .page-section__header {
-    height: 200px;
+    height: 250px;
     width: 100%;
     position: relative;
-    margin-top:140px;
+    padding-top:140px;
 }
 
 .page-header__inner {
@@ -1450,12 +1450,40 @@ ul.breadcrumbs__list {
     position: absolute;
     z-index:-1;
     top: 0;
-    opacity: 0.2;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.page-section__header {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    padding-top: 140px;
+}
+
+.page-section__header .fixed-container {
+    position: relative;
+    z-index:4;
+}
+
+.page-section__header .fixed-container h2{
+    color: #fff;
+}
+
+.page-section__header:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 24, 7);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 25%); */
+    background: linear-gradient(180deg, rgba(25, 25, 25, .95) 0%, rgba(25,25,25, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 /* 
 .page-section__content .fixed-container {

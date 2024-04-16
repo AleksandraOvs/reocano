@@ -19,9 +19,9 @@ get_header(); ?>
                                 ?>>
         <div class="page-header__inner">
             <div class="fixed-container">
-                <ul class="breadcrumbs__list">
-                    <?php echo true_breadcrumbs(); ?>
-                </ul>
+                <!-- <ul class="breadcrumbs__list">
+                    <?php //echo true_breadcrumbs(); ?>
+                </ul> -->
                 <h2 class="site-page__title toright"> <?php the_title(); ?> </h2>
             </div>
         </div>

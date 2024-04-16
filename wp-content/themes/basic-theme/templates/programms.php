@@ -1,4 +1,4 @@
-            <h2 class="site-page__title">
+            <h2 class="site-page__title" id="programms">
                 Авторские программы
             </h2>
             <div class="programms-description">

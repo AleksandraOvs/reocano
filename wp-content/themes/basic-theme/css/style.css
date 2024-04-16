@@ -852,8 +852,8 @@ span.swiper-pagination-bullet{
 
 .swiper-slide.hero-slider__slide.swiper-slide-active {
     transform: scale(1.2);
-    background: rgba(227, 231, 49, .7);
-    backdrop-filter: blur(20px);
+    background: rgba(227, 231, 49, .5);
+    backdrop-filter: blur(30px);
     z-index: 5;
     color: #111111;
     transition: all .3s linear;

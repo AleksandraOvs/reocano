@@ -665,7 +665,7 @@ span.wpcf7-form-control-wrap .cf-textarea {
     box-sizing: border-box;
     cursor: pointer;
     width: 35px;
-    background: var(--black);
+    background: rgba(227, 231, 49, .5);
     border-radius: 50px;
     height: 35px;
     transition: all .3s linear;
@@ -674,6 +674,11 @@ span.wpcf7-form-control-wrap .cf-textarea {
 .hero-slider__button-prev svg, .hero-slider__button-next svg {
     width: 10px;
     height: 100%;
+}
+
+.hero-slider__button-prev svg, .hero-slider__button-next svg path,
+.hero-slider__button-prev svg, .hero-slider__button-prev svg path{
+    fill: #111111;
 }
 
 .hero-slider__button-prev svg {

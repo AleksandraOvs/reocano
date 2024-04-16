@@ -692,7 +692,7 @@ span.wpcf7-form-control-wrap .cf-textarea {
 }
 
 .hero-slider__button-prev:hover, .hero-slider__button-next:hover {
-    background:#252525;
+    background: var(--green);
     transition: all .3s linear;
 }
 

@@ -1125,8 +1125,14 @@ a.entry-post__programm__more:hover span{
     transition: all .5s linear;
 }
 
-a.entry-post__programm__more:hover svg path{
+a.entry-post__programm__more svg path{
     fill: #fff;
+    transition: all .5s linear;
+}
+
+
+a.entry-post__programm__more:hover svg path{
+    fill: var(--green);
     transition: all .5s linear;
 }
 
@@ -1236,7 +1242,7 @@ a.entry-post__programm__more:hover svg path{
 /*PROGRAMMS*/
 
 .fixed-container .section-programms {
-    padding: 30px;
+    padding: 3% 30px;
     transform: translateY(-40px);
     background: #fff;
     /* backdrop-filter: drop-shadow(2px 4px 6px black); */

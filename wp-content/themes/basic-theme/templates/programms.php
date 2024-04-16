@@ -19,11 +19,10 @@
                 <div class="archive-posts__grid">
                     <?php while (have_posts()) : the_post(); ?>
                         <div class="entry-post__programm">
-                            <a class="entry-post__programm__link" href="<?php echo the_permalink() ?>">
+                            <div class="entry-post__programm__inner-img">
                                 <?php echo get_the_post_thumbnail() ?>
-                            </a>
 
-                            <div class="entry-post__inner__head__summary">
+                                <div class="entry-post__inner__head__summary">
                                 <div class="entry-post__inner__head">
                                     <h3><?php the_title(); ?></h3>
                                     <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
@@ -37,6 +36,9 @@
 
                                 </a>
                             </div>
+                            </div> 
+
+                            
 
                             <div class="entry-post__programm__content">
                                 <?php the_content() ?>

@@ -478,6 +478,7 @@ img.hero-image {
 
 a.hero-button.button.fill:hover {
     background: #111;
+    border:1px solid #111111;
     color: #fff;
     transition: all .3s linear;
 }

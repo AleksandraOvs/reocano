@@ -20,7 +20,8 @@ get_header(); ?>
         <div class="page-header__inner">
             <div class="fixed-container">
                 <!-- <ul class="breadcrumbs__list">
-                    <?php //echo true_breadcrumbs(); ?>
+                    <?php //echo true_breadcrumbs(); 
+                    ?>
                 </ul> -->
                 <h2 class="site-page__title toright"> <?php the_title(); ?> </h2>
             </div>
@@ -39,17 +40,14 @@ get_header(); ?>
                 if (have_posts()) : ?>
                     <div class="archive-posts__grid books">
                         <?php while (have_posts()) : the_post(); ?>
-                            <a href="<?php echo the_permalink() ?>" class="entry-post__inner">
-                                
-                                    <?php echo get_the_post_thumbnail() ?>
-                               <div class="entry-post__inner__head">
-                                <h3><?php the_title(); ?></h3>
-                                <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
-                               </div>
-                                
-                </a>
+                                <?php echo get_the_post_thumbnail() ?>
+
+                                <div class="entry-post__inner__head">
+                                    <h3><?php the_title(); ?></h3>
+                                    <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+                                </div>
                         <?php endwhile; ?>
-                </div>
+                    </div>
                 <?php endif; ?>
 
 
@@ -61,7 +59,7 @@ get_header(); ?>
 
 
 
-</section>
+    </section>
 
 </div>
 </main>

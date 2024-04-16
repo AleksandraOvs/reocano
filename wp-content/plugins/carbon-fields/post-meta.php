@@ -25,4 +25,10 @@ Container::make('post_meta', 'Добавить в портфолио')
                ->set_width(33)
                -> set_type('video')
            ));
+
+           Container::make('post_meta', 'Цитата для книги')
+            ->show_on_post_type('books')
+            ->add_fields (array (
+               Field::make('rich_text', 'crb_boot_quote', 'Цитата')
+           ));
     

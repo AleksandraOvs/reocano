@@ -129,7 +129,7 @@ h2{
     line-height: 1.2;
     color: var(--black);
     letter-spacing: 3px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h3{
@@ -162,13 +162,32 @@ p{
     padding: 40px 0;
 }
 
-h2.site-page__title{
+h2.site-page__title {
+    position: relative;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1;
     margin-bottom: 30px;
     letter-spacing: 3px;
+}
+
+h2.site-page__title:after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: var(--black);
+}
+
+h2.site-page__title:before {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: var(--black);
 }
 
 .fixed-container{
@@ -1088,7 +1107,6 @@ p.popup-description {
     border-radius: 7px;
     padding: 5px 25px;
     gap: 10px;
-    font-size: 20px;
     background: var(--green);
     color: #fff;
     border: 1px solid var(--green);
@@ -1108,7 +1126,7 @@ a.entry-post__programm__more:hover span{
 }
 
 a.entry-post__programm__more:hover svg path{
-    fill: var(--green);
+    fill: #fff;
     transition: all .5s linear;
 }
 

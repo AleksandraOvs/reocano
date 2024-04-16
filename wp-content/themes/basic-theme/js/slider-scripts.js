@@ -1,57 +1,57 @@
 const swiper = new Swiper('.hero-slider', {
-  slidesPerView: 1.5,
-  //spaceBetween: 20,
+  // slidesPerView: 1.5,
   // centeredSlides: true,
-  centeredSlides: true,
-  loop: true,
-  // grid: {
-  //   rows: 2
-  // },
-   // direction: 'vertical',
-    // loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
-    //effect: "fade",
-    // If we need pagination
-    pagination: {
-      el: '.hero-slider__pagination',
-      clickable: true,
-    },
+  // loop: true,
+  //   pagination: {
+  //     el: '.hero-slider__pagination',
+  //     clickable: true,
+  //   },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.hero-slider__button-next',
-      prevEl: '.hero-slider__button-prev',
-    },
+  
+  //   navigation: {
+  //     nextEl: '.hero-slider__button-next',
+  //     prevEl: '.hero-slider__button-prev',
+  //   },
 
-    breakpoints: {
-      // when window width is >= 320px
-      // 320: {
-      //     slidesPerView: 1.3,
-      //     spaceBetween: 0,
-      //     slideToClickedSlide: true,
-      // },
-      // when window width is >= 480px
-      480: {
-          slidesPerView: 1.5,
-          spaceBetween: 5,
-          slideToClickedSlide: true,
-      },
-      // when window width is >= 640px
-      576: {
-          slidesPerView: 3,
-          spaceBetween: 5,
-          slideToClickedSlide: true,
-      },
+  //   breakpoints: {
+  //     480: {
+  //         slidesPerView: 1.5,
+  //         spaceBetween: 5,
+  //         slideToClickedSlide: true,
+  //     },
+  //     576: {
+  //         slidesPerView: 3,
+  //         spaceBetween: 5,
+  //         slideToClickedSlide: true,
+  //     },
 
-      1400:{
-        slidesPerView: 5,
-          spaceBetween: 5,
-          slideToClickedSlide: true,
-      }
-  }
+  //     1400:{
+  //       slidesPerView: 5,
+  //         spaceBetween: 5,
+  //         slideToClickedSlide: true,
+  //     }
+  // }
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 10,
+  centeredSlides: true,
+  slidesPerView: 5,
+  // effect: "coverflow",
+  //     grabCursor: true,
+  //     centeredSlides: true,
+  //     slidesPerView: 5,
+  //     coverflowEffect: {
+  //       rotate: 30,
+  //       stretch: 0,
+  //       depth: 5,
+  //       modifier: 0.7,
+  //       slideShadows: true,
+  //     },
+
+      navigation: {
+            nextEl: '.hero-slider__button-next',
+            prevEl: '.hero-slider__button-prev',
+          },
    
   });
 

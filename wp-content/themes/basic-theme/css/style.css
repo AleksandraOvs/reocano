@@ -1045,6 +1045,11 @@ p.popup-description {
     width: 100%;
     height: 250px;
 }
+
+.programms-description {
+    text-align: center;
+}
+
 .entry-post__programm .entry-post__programm__inner-img img {
     width:100%;
     height: 100%;

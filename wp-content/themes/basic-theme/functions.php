@@ -363,3 +363,36 @@ function custom_pagination() {
 //     get_template_part('templates/programms');
 //     }
 // add_shortcode( 'programms', 'programms_shortcode');
+
+## заменим слово "записи" на "посты" для типа записей 'post'
+//$labels = apply_filters( "post_type_labels_{$post_type}", $labels );
+add_filter('post_type_labels_post', 'rename_posts_labels');
+function rename_posts_labels( $labels ){
+	// заменять автоматически нельзя: Запись = Статья, а в тексте получим "Просмотреть статья"
+
+	$new = array(
+		'name'                  => 'Блог',
+		'singular_name'         => 'Запись',
+		'add_new'               => 'Добавить запись',
+		'add_new_item'          => 'Добавить запись',
+		'edit_item'             => 'Редактировать запись',
+		'new_item'              => 'Новый запись',
+		'view_item'             => 'Просмотреть запись',
+		'search_items'          => 'Поиск записей',
+		'not_found'             => 'Записи не найдены.',
+		'not_found_in_trash'    => 'Записи в корзине не найдены.',
+		'parent_item_colon'     => '',
+		'all_items'             => 'Все записи',
+		'archives'              => 'Архивы записей',
+		'insert_into_item'      => 'Вставить в запись',
+		'uploaded_to_this_item' => 'Загруженные для этой записи',
+		'featured_image'        => 'Миниатюра записи',
+		'filter_items_list'     => 'Фильтровать список записей',
+		'items_list_navigation' => 'Навигация по списку записей',
+		'items_list'            => 'Список записей',
+		'menu_name'             => 'Блог',
+		'name_admin_bar'        => 'Запись', // пункте "добавить"
+	);
+
+	return (object) array_merge( (array) $labels, $new );
+}

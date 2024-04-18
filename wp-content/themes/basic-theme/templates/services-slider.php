@@ -46,7 +46,7 @@
 		    ?>
             <div class="swiper-slide services-slider__slide">
                 <?php the_title() ?>
-                <?php the_post_thumbnail('full') ?>
+                <?php the_post_thumbnail('medium') ?>
             </div>
 		    <?php
 	            }

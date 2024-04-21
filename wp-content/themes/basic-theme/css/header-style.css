@@ -644,11 +644,11 @@ span.burger__line:after {
         transition: all .5s ease-out;
     }
 
-    .header__menu li a {
+    /* .header__menu li a {
         text-align: left;
         line-height: 2;
         font-size: 20px;
-    }
+    } */
 
     .header__bottom .fixed-container {
         padding: 5%;

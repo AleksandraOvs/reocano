@@ -111,18 +111,18 @@ const books_swiper = new Swiper('.books-slider', {
 
 
 
-$('.elementor-element-d04cf10').slick({
-  dots: true,
-  slidesToShow: 3.5,
-  arrows: true,
-  appendDots: $('.products__slider-dots'),
-  prevArrow: $('.products__slider-arrow_prev'),
-  nextArrow: $('.products__slider-arrow_next'),
-  infinite: false,
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      adaptiveHeight: true,
-    }
-  }]
-})
+  $('.elementor-slider').slick({
+    dots: true,
+    slidesToShow: 3.5,
+    arrows: true,
+    appendDots: $('.elementor__slider-dots'),
+    prevArrow: $('.elementor__slider-arrow_prev'),
+    nextArrow: $('.elementor__slider-arrow_next'),
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        adaptiveHeight: true,
+      }
+    }]
+  })

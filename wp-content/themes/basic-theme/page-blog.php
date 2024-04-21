@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main template file
+ * Template name: blog
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -33,7 +33,7 @@ get_header(); ?>
 
                 <?php
                 $args = array(
-                    'post_type' => 'books',
+                   // 'post_type' => 'post',
                     'publish' => true,
                     //'paged' => get_query_var('paged'),
                 );

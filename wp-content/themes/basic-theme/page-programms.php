@@ -26,45 +26,48 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="site-page__content">
+        <?php
+        $args = array(
+            'post_type' => 'programms',
+            'publish' => true,
+            //'paged' => get_query_var('paged'),
+        );
+        query_posts($args);
+        if (have_posts()) : ?>
             <div class="fixed-container">
 
-                <?php
-                $args = array(
-                    'post_type' => 'programms',
-                    'publish' => true,
-                    //'paged' => get_query_var('paged'),
-                );
-                query_posts($args);
-                if (have_posts()) : ?>
-                    <div class="archive-posts__grid">
-                        <?php while (have_posts()) : the_post(); ?>
-                            <a href="<?php echo the_permalink() ?>" class="entry-post__inner">
-                                
-                                    <?php echo get_the_post_thumbnail() ?>
-                               <div class="entry-post__inner__head">
-                                <h3><?php the_title(); ?></h3>
-                                <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
-                               </div>
-                                
-                </a>
-                        <?php endwhile; ?>
-                </div>
-                <?php endif; ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <a href="<?php echo the_permalink() ?>" class="programms-posts__grid__item">
+                        <div class="programms-posts__grid__item__img">
+                        
+                            <?php echo get_the_post_thumbnail() ?>
 
+                            <div class="programms-posts__grid__item__summary">
+                                <div class="programms-posts__grid__item__head">
+                                    <h3><?php the_title(); ?></h3>
+                                    <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+                                </div>
+                                <!-- <a href="<?php //echo the_permalink() 
+                                                ?>" class="entry-post__button-more">
+                                    <span>Подробнее</span>
+                                </a> -->
+                            </div>
+                        </div>
 
-
+                    </a>
+                <?php endwhile; ?>
 
             </div>
-        </div>
+        <?php endif; ?>
 
 
 
-
-</section>
+    </section>
 
 </div>
 </main>
+
+
 
 <?php
 get_footer();

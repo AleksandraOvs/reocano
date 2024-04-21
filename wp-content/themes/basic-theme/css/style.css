@@ -1874,7 +1874,6 @@ ul.breadcrumbs__list {
 .page-header__inner {
     position:relative;
     padding-top: 120px;
-    height: 300px;
     width:100%;
     overflow: hidden;
 }

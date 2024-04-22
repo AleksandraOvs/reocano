@@ -113,7 +113,7 @@ const books_swiper = new Swiper('.books-slider', {
 
   $('.elementor-slider .e-con-inner').slick({
     dots: true,
-    slidesToShow: 1.5,
+    slidesToShow: 2,
     arrows: true,
     appendDots: $('.elementor__slider-dots'),
     prevArrow: $('.elementor__slider-arrow_prev'),

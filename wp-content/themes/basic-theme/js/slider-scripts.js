@@ -111,7 +111,7 @@ const books_swiper = new Swiper('.books-slider', {
 
 
 
-  $('.elementor-slider').slick({
+  $('.elementor-slider .e-con-inner').slick({
     dots: true,
     slidesToShow: 3.5,
     arrows: true,

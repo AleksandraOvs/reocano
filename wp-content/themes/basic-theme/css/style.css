@@ -2697,3 +2697,26 @@ ul.breadcrumbs__list {
     height: 300px;
     object-fit: cover;
 }
+
+/*MAINPAGE SLIDER*/
+
+
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel {
+    height: 350px !important;
+    padding-bottom: 5%;
+}
+
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide {
+    height: 100%;
+}
+
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide figure{
+    height: 100%;
+}
+
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

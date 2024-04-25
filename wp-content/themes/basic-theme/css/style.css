@@ -2723,10 +2723,10 @@ ul.breadcrumbs__list {
     object-position: center;
 }
 
-.swiper-slide {
+.swiper-slide.swiper-slide-next {
     position: relative;
-    z-index: 3;
-    transform: scale(1.2);
+    transform: scale(1.4);
+    z-index: 5;
 }
 
 .elementor-widget-image-carousel .swiper-slide {

@@ -2708,6 +2708,6 @@ transition: all .3s ease-in-out;
     }
 
     .elementor-element .swiper-container .elementor-swiper-button, .elementor-element .swiper-container~.elementor-swiper-button, .elementor-element .swiper .elementor-swiper-button, .elementor-element .swiper~.elementor-swiper-button, .elementor-lightbox .swiper-container .elementor-swiper-button, .elementor-lightbox .swiper-container~.elementor-swiper-button, .elementor-lightbox .swiper .elementor-swiper-button, .elementor-lightbox .swiper~.elementor-swiper-button {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 }

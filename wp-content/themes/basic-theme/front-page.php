@@ -3,16 +3,17 @@
 <?php get_template_part('templates/hero'); ?>
 <section class="section-content">
     <?php the_content() ?>
-    <div class="fixed-container">
-        <div class="section-programms">
+
+    <div class="section-programms">
+        <div class="fixed-container">
             <?php get_template_part('templates/programms') ?>
         </div>
     </div>
 
     <div class="section-books background-grey">
         <div class="fixed-container">
-        <?php get_template_part('templates/books') ?>
-        </div>    
+            <?php get_template_part('templates/books') ?>
+        </div>
     </div>
 
 

@@ -174,11 +174,11 @@ p {
 h2.site-page__title {
     position: relative;
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--green);
     line-height: 1;
     margin-bottom: 30px;
-    letter-spacing: unset;
+    letter-spacing: 3px;
 }
 
 h2.site-page__title:after {

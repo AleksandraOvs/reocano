@@ -2648,6 +2648,21 @@ ul.breadcrumbs__list {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide.swiper-slide-next a figure img{
+    -webkit-filter: unset;
+    -moz-filter: unset;
+    -ms-filter:unset; 
+    -o-filter: unset;
+    filter: unset;
+    filter: unset;
 }
 .swiper-slide{
 transition: all .3s ease-in-out;

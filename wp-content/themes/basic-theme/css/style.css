@@ -2706,4 +2706,8 @@ transition: all .3s ease-in-out;
     .mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel {
         height: 550px !important;
     }
+
+    .elementor-element .swiper-container .elementor-swiper-button, .elementor-element .swiper-container~.elementor-swiper-button, .elementor-element .swiper .elementor-swiper-button, .elementor-element .swiper~.elementor-swiper-button, .elementor-lightbox .swiper-container .elementor-swiper-button, .elementor-lightbox .swiper-container~.elementor-swiper-button, .elementor-lightbox .swiper .elementor-swiper-button, .elementor-lightbox .swiper~.elementor-swiper-button {
+        font-size: 50px;
+    }
 }

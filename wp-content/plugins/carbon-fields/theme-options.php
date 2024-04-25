@@ -51,10 +51,10 @@ Container::make('theme_options', 'Контакты')
         ->add_fields( array (
             Field::make('image', 'crb_hero-image', 'Изображение')
             ->set_width(20),
-            Field::make('text', 'crb_hero-head', 'Первый заголовок')
-            ->set_width(15),
+            Field::make('rich_text', 'crb_hero-head', 'Первый заголовок')
+            ->set_width(40),
             Field::make('rich_text', 'crb_hero-description', 'Текст под заголовком')
-            ->set_width(65),
+            ->set_width(40),
             Field::make('text', 'crb_hero_button', 'Название кнопки')
             ->set_width(50),
             Field::make('text', 'crb_button_link', 'Ссылка кнопки')

@@ -62,6 +62,9 @@ a.button,
     display: block;
     background: transparent;
     text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Cakra';
     padding: 7px 15px;
     color: var(--green);
     border-radius: 10px;
@@ -81,9 +84,9 @@ a.button.fill,
 a.button.fill:hover,
 a.button:hover,
 .wpcf7-submit.has-spinner:hover {
-    background: transparent;
+    background: var(--green);
     border-color: var(--green);
-    color: var(--green);
+    color: #fff;
     transition: all .3s linear;
     transform: scale(1.02);
 }
@@ -94,10 +97,11 @@ a.button:hover,
 }
 
 h1 {
+    font-family: 'Cakra';
     position: relative;
     text-align: center;
-    font-size: 75px;
-    font-weight: 300;
+    font-size: 60px;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     margin: 0;
@@ -404,9 +408,8 @@ section.section-hero:after {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgb(0, 24, 7);
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 25%); */
-    background: linear-gradient(180deg, rgba(25, 25, 25, .8) 0%, rgba(25, 25, 25, 0) 75%, rgba(255, 255, 255, 1));
+    background: rgba(0,40,12, 0.8);
+    background: linear-gradient(180deg, rgba(0,0,0, .8) 0%, rgba(0,40,12, 0.8) 50%, rgba(0,0,0, 1) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -451,19 +454,22 @@ img.hero-image {
     color: #fff;
 } */
 
+.section-hero__img{
+    height: 100%;
+}
 .section-hero__img .fixed-container {
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-top: 10%;
+    justify-content: center;
     /* justify-content: center; */
     align-items: center;
     z-index: 3;
 }
 
 .section-hero__img__left-content .button {
-    margin: 20px auto;
+    margin: 40px auto 0;
 }
 
 .section-hero__img__title,
@@ -2056,6 +2062,19 @@ ul.breadcrumbs__list {
 }
 
 @media (max-width: 1440px) {
+
+    .section-hero__img .fixed-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section-hero__img__title, .section-hero__img__left-content {
+        width: 80%;
+    }
+
+
     .fixed-container {
         max-width: 100%;
         padding: 0 5%;
@@ -2152,10 +2171,7 @@ ul.breadcrumbs__list {
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding-top: 0;
-        padding-bottom: 10%;
         align-items: center;
-        justify-content: flex-end;
         position: relative;
         z-index: 10;
         /* background: rgba(255, 255, 255, .5); */

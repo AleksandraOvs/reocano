@@ -21,7 +21,6 @@ header.header {
     position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
     overflow: hidden;
     background: transparent;
     display: flex;
@@ -29,7 +28,7 @@ header.header {
     color: transparent;
 }
 
-.header__top:after {
+/* .header__top:after {
     content: '';
     width: 100%;
     height: 1px;
@@ -38,7 +37,7 @@ header.header {
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} */
 
 /* .header__top:after {
     content: '';
@@ -161,6 +160,7 @@ a.site-header__logo {
 a.header__top__right__phone__link {
     font-size: 18px;
     font-weight: 400;
+    color: #fff;
     transition: all .3s linear;
 }
 
@@ -277,8 +277,9 @@ li.social__item .social__link img {
 
 a.site-header__logo {
     display: block;
-    width: 50px;
-    height: 70px;
+    width: 70px;
+    height: 90px;
+    transition: all .3s ease-in-out;
 }
 
 
@@ -489,7 +490,13 @@ span.burger__line:after {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     transition: all .3s linear;
+}
 
+.header__top.header-scroll .fixed-container .header__top__left .site-header__logo{
+display: block;
+width: 50px;
+height: 70px;
+transition: all .5s ease-in-out;
 }
 
 /* .header__top.header-scroll .fixed-container .header__top__left .site-header__logo {
@@ -791,11 +798,13 @@ span.burger__line:after {
         flex-direction: column;
         opacity: 0;
         right: 0;
+        background: rgb(0 24 7 / 75%);
         position: fixed;
+        backdrop-filter: blur(30px);
         padding: 100px 20px;
         transform: translateX(100%);
         width: 40%;
-        background: #fff;
+        /* background: #fff; */
         z-index: 5;
         height: 100%;
         transition: transform .5s linear;
@@ -812,6 +821,11 @@ span.burger__line:after {
     opacity: 1;
     transform: translateX(0);
     transition: transform .5s linear;
+    }
+
+    .mobile__menu__inner nav ul li a {
+        color: #fff;
+        line-height: 2.6;
     }
 
     /* .header__top__left {

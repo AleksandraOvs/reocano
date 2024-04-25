@@ -32,7 +32,7 @@
                 <?php
                 if ($button_link = carbon_get_theme_option('crb_button_link')) {
                 ?>
-                    <a class="hero-button button fill" href="<?php echo $button_link ?>"><?php echo carbon_get_theme_option('crb_hero_button') ?></a>
+                    <a class="hero-button button" href="<?php echo $button_link ?>"><?php echo carbon_get_theme_option('crb_hero_button') ?></a>
                 <?php
                 }
                 ?>

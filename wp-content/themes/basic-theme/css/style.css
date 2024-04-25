@@ -132,7 +132,8 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 42px;
+    font-family: 'Cakra';
     margin: 0;
     line-height: 1.2;
     color: var(--black);
@@ -142,7 +143,7 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 500;
+    font-family: 'Cakra';
     line-height: 100%;
     margin: 0;
     margin-bottom: 10px;

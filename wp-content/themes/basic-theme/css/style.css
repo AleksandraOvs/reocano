@@ -28,7 +28,7 @@ body {
     font-size: 16px;
     color: #000;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: var(--light-green);
     width: 100%;
     overflow-x: hidden;
 }

@@ -2703,7 +2703,9 @@ ul.breadcrumbs__list {
 
 .mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel {
     height: 350px !important;
+    padding-top: 5%;
     padding-bottom: 5%;
+    position: relative;
 }
 
 .mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide {
@@ -2719,4 +2721,14 @@ ul.breadcrumbs__list {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.swiper-slide {
+    position: relative;
+    z-index: 3;
+    transform: scale(1.2);
+}
+
+.elementor-widget-image-carousel .swiper-slide {
+    text-align: center;
 }

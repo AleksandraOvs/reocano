@@ -2722,11 +2722,14 @@ ul.breadcrumbs__list {
     object-fit: cover;
     object-position: center;
 }
-
+.swiper-slide{
+transition: all .3s ease-in-out;
+}
 .swiper-slide.swiper-slide-next {
     position: relative;
     transform: scale(1.4);
     z-index: 5;
+    transition: all .3s ease-in-out;
 }
 
 .elementor-widget-image-carousel .swiper-slide {

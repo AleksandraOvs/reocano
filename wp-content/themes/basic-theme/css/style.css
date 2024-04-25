@@ -2727,7 +2727,7 @@ transition: all .3s ease-in-out;
 }
 .swiper-slide.swiper-slide-next {
     position: relative;
-    transform: scale(1.4);
+    transform: scale(1.2);
     z-index: 5;
     transition: all .3s ease-in-out;
 }

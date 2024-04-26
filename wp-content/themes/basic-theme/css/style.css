@@ -2667,7 +2667,7 @@ ul.breadcrumbs__list {
 .swiper-slide{
 transition: all .3s ease-in-out;
 }
-.swiper-slide.swiper-slide-next {
+.mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide.swiper-slide-next {
     position: relative;
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .4));
@@ -2694,7 +2694,7 @@ transition: all .3s ease-in-out;
         filter: unset;
     }
 
-    .swiper-slide.swiper-slide-next {
+    .mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide.swiper-slide-next {
         position: relative;
         transform: none;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .4));

@@ -298,19 +298,21 @@ main.main {
 }
 
 .destr-img div img {
+    opacity: .5;
     filter: saturate(0);
     -webkit-filter: saturate(0);
     -moz-backdrop-filter: saturate(0);
     -ms-backdrop-filter: saturate(0);
-    transition: filter .5s ease-in;
+    transition: filter 1s ease-in, opacity .5s linear;
 }
 
 .destr-img.element-show div img {
+    opacity: 1;
     filter: saturate(1);
     -webkit-filter: saturate(1);
     -moz-backdrop-filter: saturate(1);
     -ms-backdrop-filter: saturate(1);
-    transition: filter .5s ease-out;
+    transition: filter 1s ease-out, opacity .5s linear;
 }
 
 /* .page-container .fixed-container {

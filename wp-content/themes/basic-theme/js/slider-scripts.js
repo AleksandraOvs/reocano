@@ -103,7 +103,7 @@ const books_swiper = new Swiper('.books-slider', {
     },
 
     1200:{
-      slidesPerView: 4,
+      slidesPerView: 3,
     }
   }
 

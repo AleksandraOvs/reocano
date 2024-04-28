@@ -23,9 +23,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-family: "Cera", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     color: #000;
     line-height: 1.6;
     background-color: var(--light-green);
@@ -67,10 +67,10 @@ a.button,
     text-transform: uppercase;
     font-family: 'Cakra';
     font-weight: 400;
-    padding: 10px 15px;
+    padding: 15px 20px;
     color: var(--green);
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 3px;
+    width: 300px;
     border: 1px solid var(--green);
     transition: all .3s linear;
 }
@@ -1415,6 +1415,7 @@ a.programms__more-button.button:hover{
     flex-direction: column;
     justify-content: center;
     font-size: 14px;
+    font-style: italic;
     text-align: center;
     color: #fff;
     line-height: 140%;
@@ -2495,57 +2496,6 @@ ul.breadcrumbs__list {
 .icon-marks {
     grid-template-columns: 70px auto !important;
     margin-top: 20px;
-}
-
-.b24-form-wrapper {
-    background: transparent !important;
-    color: #fff;
-}
-
-.b24-form-control-string .b24-form-control,
-.b24-form-control-list .b24-form-control,
-.b24-form-control-text .b24-form-control,
-.b24-form-control-select .field-item {
-    border-radius: 0 !important;
-    height: auto !important;
-    border: none;
-    border-bottom: 1px solid #fff !important;
-    color: #fff !important;
-    background-image: none !important;
-}
-
-.b24-form-control-select-label,
-.b24-form-control-label {
-    color: #fff !important;
-    font-weight: 400 !important;
-    opacity: 1 !important;
-    font-family: "Manrope", sans-serif !important;
-}
-
-.b24-form-control-string .b24-form-control:focus,
-.b24-form-control-list .b24-form-control:focus,
-.b24-form-control-text .b24-form-control:focus,
-.b24-form-control-select .field-item:focus {
-    background: transparent !important;
-    border-color: #00AEEF !important;
-    font-family: "Manrope", sans-serif !important;
-}
-
-.b24-form-field-agreement .b24-form-field-agreement-link {
-    font-size: 11px;
-    color: #fff;
-    line-height: 1;
-    cursor: pointer;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 300;
-}
-
-.b24-form-padding-side {
-    padding: 0 !important;
-}
-
-.b24-form-header-padding {
-    padding: 0 !important;
 }
 
 .post-header {

@@ -1,40 +1,42 @@
 @font-face {
-    font-family: "Noto";
-    font-weight:700;
-    src: local("NotoSans"), 
-    url(../fonts/notosans-bold.ttf) format("truetype"), 
-    url(../fonts/notosans-bold.woff) format("woff"), 
-    url(../fonts/notosans-bold.woff2) format("woff2");
+    font-family: "Cera";
+    font-weight:600;
+    src: local("Cera"), 
+    url(../fonts/CeraProMedium.ttf) format("truetype"), 
+    url(../fonts/CeraProMedium.woff) format("woff"), 
+    url(../fonts/CeraProMedium.woff2) format("woff2");
     font-display: swap;
   }
 
 @font-face {
-    font-family: "Noto";
+    font-family: "Cera";
     font-weight:400;
-    src: local("NotoSans"), 
-    url(../fonts/notosans-regular.ttf) format("truetype"), 
-    url(../fonts/notosans-regular.woff) format("woff"), 
-    url(../fonts/notosans-regular.woff2) format("woff2");
+    font-style: normal;
+    src: local("Cera"), 
+    url(../fonts/CeraProRegular.ttf) format("truetype"), 
+    url(../fonts/CeraProRegular.woff) format("woff"), 
+    url(../fonts/CeraProRegular.woff2) format("woff2");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto";
+    font-family: "Cera";
     font-weight:300;
-    src: local("NotoSans"), 
-    url(../fonts/notosans-light.ttf) format("truetype"), 
-    url(../fonts/notosans-light.woff) format("woff"), 
-    url(../fonts/notosans-light.woff2) format("woff2");
+    src: local("Cera"), 
+    url(../fonts/CeraProLight.ttf) format("truetype"), 
+    url(../fonts/CeraProLight.woff) format("woff"), 
+    url(../fonts/CeraProLight.woff2) format("woff2");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto";
-    font-weight:200;
-    src: local("NotoSans"), 
-    url(../fonts/notosans-extralight.woff) format("woff"), 
-    url(../fonts/notosans-extralight.woff2) format("woff2"), 
-    url(../fonts/notosans-extralight.ttf) format("truetype");
+    font-family: "Cera";
+    font-weight:400;
+    font-style: italic;
+    src: local("Cera"), 
+    url(../fonts/CeraProRegularItalic.woff) format("woff"), 
+    url(../fonts/CeraProRegularItalic.woff2) format("woff2"), 
+    url(../fonts/CeraProRegularItalic.ttf) format("truetype");
     font-display: swap;
 }
 

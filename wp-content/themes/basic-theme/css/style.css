@@ -1277,8 +1277,8 @@ p.popup-description {
 }
 
 .section-programms .fixed-container{
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 ul.programms__list {
@@ -1327,13 +1327,22 @@ a.programms__more-button.button:hover{
 }
 /*BOOKS*/
 
+.section-books .fixed-container h2 {
+    text-align: center;
+}
+
+.books-description{
+    text-align: center;
+    padding-left:10%;
+    padding-right: 10%;
+}
 .archive-posts__grid.books {
     display: block;
 }
 
 .section-books .fixed-container {
     position:relative;
-    padding: 3% 0;
+    padding: 7% 0;
 }
 
 .books-slider {
@@ -1365,8 +1374,8 @@ a.programms__more-button.button:hover{
     width: 100%;
     height: 100%;
     padding: 15px;
-    border-radius: 5px;
-    background: #fff;
+    border-radius: 3px;
+    background: var(--dark-green);
     border: 1px solid #cacaca;
     transition: all .3s linear;
 }
@@ -1394,23 +1403,44 @@ a.programms__more-button.button:hover{
 }
 
 .entry-post__books__item h3 {
+    position: relative;
     font-size: 18px;
+    font-family: 'Cera', sans-serif;
     line-height: 120%;
-    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
     margin-top: 10px;
     height: 110px;
+    padding-bottom: 3px;
 }
 
 .entry-post__books__item .button {
-    margin-top: 10px;
-    width: 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin:10px auto 0;
+    padding: 0;
+    width:250px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.entry-post__books__item .button:hover{
+    background: none;
+    border: none;
+    color: var(--green);
 }
 
 .entry-post__books__item .book-link .entry-post__excerpt {
     position: absolute;
     top: 0;
     opacity: 0;
-    transform: translateY(10%);
+    /* transform: translateY(10%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1423,7 +1453,7 @@ a.programms__more-button.button:hover{
     width: 100%;
     height: 100%;
     z-index: 3;
-    transition: transform .5s ease-in, opacity .7s linear;
+    transition: opacity .7s linear;
 }
 
 .entry-post__books__item .book-link:after {
@@ -1431,14 +1461,14 @@ a.programms__more-button.button:hover{
     opacity: 0;
     width: 100%;
     height: 100%;
-    background: rgba(25, 25, 25, .5);
+    background: rgba(71, 104, 80, .7);
     backdrop-filter: blur(20px);
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    transition: opacity .3s ease-in;
+    transition: opacity .7s ease-in;
 }
 
 .entry-post__books__item .book-link:hover:after {
@@ -1449,7 +1479,7 @@ a.programms__more-button.button:hover{
 .entry-post__books__item .book-link:hover .entry-post__excerpt {
     transform: translateY(0);
     opacity: 1;
-    transition: transform .5s ease-out, opacity .7s linear;
+    transition: opacity .7s ease-in-out;
 }
 
 .books-slider__pagination {

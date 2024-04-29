@@ -15,9 +15,7 @@ get_header(); ?>
 
 <div class="page-container">
 
-        <?php
-      
-        if (have_posts()) : ?>
+       
     <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
                                 ?>>
          <div class="page-header__inner">
@@ -26,6 +24,9 @@ get_header(); ?>
             </div>
         </div>
 
+         <?php
+      
+        if (have_posts()) : ?>
             <div class="fixed-container">
             <div class="archive-posts__grid">
                 <?php while (have_posts()) : the_post(); ?>
@@ -33,12 +34,12 @@ get_header(); ?>
                 <?php endwhile; ?>
                 </div>
             </div>
-       
+       <?php endif; ?>
 
 
 
     </section>
- <?php endif; ?>
+ 
 </div>
 </main>
 

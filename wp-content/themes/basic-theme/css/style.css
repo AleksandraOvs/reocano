@@ -1667,9 +1667,14 @@ span.swiper-pagination-bullet {
 }
 
 .entry-post__books__heading {
+    padding: 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: url(../images/paper2.svg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: -50px;
 }
 
 .entry-post__books__book-img2 {
@@ -1932,12 +1937,6 @@ ul.breadcrumbs__list {
     position: relative;
 }
 
-.page-section__header {
-    height: 250px;
-    width: 100%;
-    position: relative;
-    padding-top: 140px;
-}
 
 .page-header__inner {
     position: relative;
@@ -1977,10 +1976,10 @@ ul.breadcrumbs__list {
 }
 
 .page-section__header {
-    height: 250px;
     width: 100%;
     position: relative;
-    padding-top: 100px;
+    padding-top: 140px;
+    padding-bottom: 100px;
 }
 
 .page-section__header .fixed-container {

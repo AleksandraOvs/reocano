@@ -411,7 +411,7 @@ a.posts__list__item__link img {
 .section-hero {
     position: relative;
     background: #fff;
-    height: calc(100vh - 150px);
+    height: 100vh;
 }
 
 /* section.section-hero:after {

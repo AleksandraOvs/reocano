@@ -1,7 +1,8 @@
 <?php
 
 /**
- * 
+ * Template name: page books
+ *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -23,36 +24,45 @@ get_header(); ?>
         } 
         ?>
             <div class="fixed-container">
-                <h2 class="site-page__title toright"> Наши книги </h2>
+                <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
             </div>
         </div>
 
         <div class="site-page__content">
             <div class="fixed-container">
 
-                <?php
-                $args = array(
-                    'post_type' => 'books',
-                    'publish' => true,
-                    //'paged' => get_query_var('paged'),
-                );
-                query_posts($args);
-                if (have_posts()) : ?>
-                    <div class="archive-posts__grid books">
-                        <?php while (have_posts()) : the_post(); ?>
-                                <?php echo get_the_post_thumbnail() ?>
+            <?php
+            $args = array(
+                'post_type' => 'books',
+                'publish' => true,
+                //'paged' => get_query_var('paged'),
+            );
+            query_posts($args);
+            if (have_posts()) : ?>
+                <ul class="books-archive__wrapper">
+                    <?php while (have_posts()) : the_post(); ?>
+                    <div class="entry-post__books__item">
+                        <a class="book-link" href="<?php the_permalink() ?>">
+                            <?php echo get_the_post_thumbnail() ?>
 
-                                <div class="entry-post__inner__head">
-                                    <h3><?php the_title(); ?></h3>
-                                    <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
-                                </div>
-                        <?php endwhile; ?>
+                            <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+                        </a>
+                        <!-- <div class="entry-post__books__item__head">
+                            
+                        </div>    -->
+                        <h3><?php the_title(); ?></h3>
+                        <a class="button fill">Купить</a>
                     </div>
-                <?php endif; ?>
+                    <?php endwhile; ?>
+                </ul>
+            <?php endif; ?>
 
 
 
 
+
+
+                
             </div>
         </div>
 
@@ -62,6 +72,7 @@ get_header(); ?>
     </section>
 
 </div>
+</main>
 
 <?php
 get_footer();

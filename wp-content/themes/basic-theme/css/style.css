@@ -179,7 +179,7 @@ h2.site-page__title {
     position: relative;
     font-size: 26px;
     font-weight: 400;
-    color: var(--green);
+    color: var(--black);
     line-height: 1;
     margin-bottom: 30px;
     letter-spacing: 3px;
@@ -2265,6 +2265,20 @@ ul.breadcrumbs__list {
         padding: 3% 5%;
     }
 
+    li.programms__list__item {
+        display: block;
+    }
+
+    .programms__list__item__more {
+        margin-top: 40px;
+    }
+
+    a.programms__more-button.button {
+        max-width: 40%;
+        background: #fff;
+        color: var(--dark-green);
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -2526,6 +2540,10 @@ ul.breadcrumbs__list {
         position: relative;
         bottom: 0;
     } */
+
+    a.programms__more-button.button {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 360px) {

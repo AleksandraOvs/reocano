@@ -87,8 +87,8 @@ a.button.fill,
 a.button.fill:hover,
 a.button:hover,
 .wpcf7-submit.has-spinner:hover {
-    background: var(--green);
-    border-color: var(--green);
+    background: transparent;
+    border-color: #fff;
     color: #fff;
     transition: all .3s linear;
     transform: scale(1.02);

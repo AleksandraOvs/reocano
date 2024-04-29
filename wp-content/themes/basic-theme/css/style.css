@@ -1611,10 +1611,11 @@ span.swiper-pagination-bullet {
 /*SINGLE BOOK*/
 
 .page-section__content .fixed-container {
-    background: #eeeeee;
+    background: url(../images/paper.svg) no-repeat;
+    background-position: center bottom;
+    background-size:cover;
     transform: translateY(-20px);
     padding: 20px;
-    border-radius: 5px;
 }
 
 /* .entry-post__books__heading {

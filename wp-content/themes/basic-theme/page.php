@@ -17,9 +17,18 @@
             </div>
         </div>
 
-        <div class="page__content">
-            <?php the_content() ?>
-        </div>
+        <?php
+      
+        if (have_posts()) : ?>
+            <div class="fixed-container">
+            <div class="archive-posts__grid">
+                <?php while (have_posts()) : the_post(); ?>
+                  <?php get_template_part('templates/entry-content'); ?>
+                <?php endwhile; ?>
+                </div>
+            </div>
+       <?php endif; ?>
+       
     </section>
 </div>
 

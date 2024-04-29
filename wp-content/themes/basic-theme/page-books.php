@@ -72,7 +72,6 @@ get_header(); ?>
     </section>
 
 </div>
-</main>
 
 <?php
 get_footer();

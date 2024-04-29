@@ -20,7 +20,7 @@ get_header(); ?>
                                 ?>>
          <div class="page-header__inner">
             <div class="fixed-container">
-                <h2 class="site-page__title toopacity white"><?php single_term_title(); ?></h2>
+                <h2 class="site-page__title toopacity white"><?php echo single_term_title(); ?></h2>
             </div>
         </div>
 

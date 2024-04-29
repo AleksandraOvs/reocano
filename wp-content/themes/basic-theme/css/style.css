@@ -57,21 +57,22 @@ a:hover {
     transition: all .3s linear;
 }
 
+.button,
 a.button,
 .wpcf7-submit.has-spinner {
     display: block;
-    background: transparent;
+    background: rgba(1,175,51,.7);
     text-align: center;
     font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
     font-family: 'Cakra';
     font-weight: 400;
-    padding: 15px 20px;
-    color: var(--green);
+    padding: 15px 35px;
+    color: #fff;
     border-radius: 3px;
     width: 300px;
-    border: 1px solid var(--green);
+    border: 1px solid rgba(1,175,51,.7);
     transition: all .3s linear;
 }
 
@@ -449,12 +450,12 @@ img.hero-image {
 }
 
 a.hero-button{
-position: relative;
-display: block;
-    background: rgba(1, 175, 52, .3);
+    position: relative;
+    display: block;
+    background: rgba(1, 175, 52, .7);
     text-align: center;
     font-size: 16px;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     line-height: 1;
     text-transform: uppercase;
     font-family: 'Cakra';
@@ -1399,7 +1400,7 @@ a.programms__more-button.button:hover{
 .entry-post__books__item {
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 25px;
     border-radius: 3px;
     background: var(--dark-green);
     border: 1px solid #cacaca;
@@ -1571,6 +1572,11 @@ a.programms__more-button.button:hover{
     fill: #cacaca;
 }
 
+.entry-post__excerpt._mob{
+    display: none;
+}
+
+
 span.swiper-pagination-bullet {
     width: 13px;
     height: 13px;
@@ -1585,6 +1591,25 @@ span.swiper-pagination-bullet {
     background: #ededed;
 }
 
+.more-book-button {
+    display:none;
+    padding: 5px 25px;
+    margin: 20px auto;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.more-book-button:hover{
+    background: rgba(25,25,25,1);
+    border: rgb(25,25,25);
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
 
 /*SINGLE BOOK*/
 
@@ -2277,6 +2302,30 @@ ul.breadcrumbs__list {
         max-width: 40%;
         background: #fff;
         color: var(--dark-green);
+    }
+
+    .entry-post__books__item .book-link .entry-post__excerpt {
+        position: relative;
+        top: unset;
+        opacity: 1;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        font-style: italic;
+        text-align: center;
+        color: #fff;
+        line-height: 140%;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        transition: opacity .7s linear;
+    }
+
+    .more-book-button {
+        display:block;
     }
 
 }

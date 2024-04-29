@@ -96,7 +96,7 @@ const books_swiper = new Swiper('.books-slider', {
     },
     
     992: {
-        slidesPerView: 2.5,
+        slidesPerView: 1.3,
         centeredSlides: true,
         loop: true
         //slideToClickedSlide: true,

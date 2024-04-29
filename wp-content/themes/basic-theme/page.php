@@ -1,7 +1,3 @@
-<?php
-
-/* Template name: Programms */
-?>
 
 <?php get_header() ?>
 

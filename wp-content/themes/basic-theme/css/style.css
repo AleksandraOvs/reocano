@@ -1610,6 +1610,10 @@ span.swiper-pagination-bullet {
 
 /*SINGLE BOOK*/
 
+.page-section__content {
+    padding-bottom: 7%;
+}
+
 .page-section__content .fixed-container {
     /* background: url(../images/paper2.svg) no-repeat;
     background-position: center bottom;

@@ -2290,14 +2290,14 @@ body.programms-template-default.single.single-programms {
     .swiper-slide.hero-slider__slide {
         height: 150px !important;
     }
-
+/* 
     .page-section__content .fixed-container {
         background: #eeeeee;
         transform: none;
         padding: 20px;
         border-radius: 5px;
         padding: 3% 5%;
-    }
+    } */
 
     li.programms__list__item {
         display: block;

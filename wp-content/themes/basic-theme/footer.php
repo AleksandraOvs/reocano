@@ -31,8 +31,8 @@ echo do_shortcode("$shcode"); ?>
 
 <div class="fixed-container">
 
-<div class="footer-left">
-	<a href="<?php site_url(); ?>" class="footer__logo logo">
+<div class="footer-center">
+<a href="<?php site_url(); ?>" class="footer__logo logo">
   			<?php
   				$footer_logo = get_theme_mod('footer_logo');
   				$img = wp_get_attachment_image_src($footer_logo, 'full');
@@ -42,31 +42,12 @@ echo do_shortcode("$shcode"); ?>
   				<?php endif; ?>
 	</a>
 
-	<?php if (is_active_sidebar('footer-sidebar1')){
-			?>
-			<div class="footer__sidebar1">
-			<?php	
-				dynamic_sidebar( 'footer-sidebar1' );
-				?>
-			</div>
-		<?php
-			}
-	?>
-
+	<div class="footer-bloginfo">
+							<h3><?php echo get_bloginfo('name') ?></h3>
+							<p><?php echo get_bloginfo('description') ?></p>
+						</div>
 </div>
 
-<div class="footer-center">
-<?php
-			        wp_nav_menu(
-				        array(
-					        'theme_location' => 'menu-footer',
-					        'container' => 'nav',
-					        'menu_class' => 'footer__menu',
-							'title'	=> true
-				        )
-			        );
-			    ?>
-</div>
 
 <div class="footer-right footer-contacts">
 	
@@ -113,9 +94,6 @@ echo do_shortcode("$shcode"); ?>
     				                    $thumb_contact = wp_get_attachment_image_url( $messenger['crb_mes_image'], 'full' );
 				                    ?>	
 									<img width="25" height="25" src="<?php echo $thumb_contact; ?>" alt="<?php echo $messenger[ 'crb_mes_name']; ?>">
-									<span>
-										<?php echo $messenger[ 'crb_mes_name']; ?>
-									</span>
   						        </a>
     				        </li>
 				            <?php
@@ -146,7 +124,17 @@ echo do_shortcode("$shcode"); ?>
 	?>
 </div>
 
-	
+<div class="footer-menu">
+<?php
+			        wp_nav_menu(
+				        array(
+					        'theme_location' => 'menu-footer',
+					        'container' => 'nav',
+					        'menu_class' => 'footer__menu',
+							'title'	=> true
+				        )
+			        );
+			    ?>
 </div>
 
 <div class="arrow-up">
@@ -155,7 +143,7 @@ echo do_shortcode("$shcode"); ?>
 </svg>
 <div>
 
-
+</div>
 </footer>
 				
 <?php wp_footer(); ?>

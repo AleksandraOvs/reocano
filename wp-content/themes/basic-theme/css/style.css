@@ -216,7 +216,7 @@ h2.site-page__title:before {
     max-width: 1440px;
     /* padding: 0 5%; */
     margin: 0 auto;
-    z-index: 3;
+    z-index: 5;
 }
 
 .white{

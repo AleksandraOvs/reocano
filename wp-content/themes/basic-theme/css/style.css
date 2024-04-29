@@ -187,6 +187,10 @@ h2.site-page__title {
     letter-spacing: 3px;
 }
 
+h2.site-page__title.toopacity {
+    text-align: center;
+}
+
 h2.site-page__title:after {
     content: '';
     width: 20%;
@@ -1260,15 +1264,32 @@ p.popup-description {
 .toright {
     transform: translateX(-70px);
     opacity: 0;
-    transition: transform .3s linear, opacity 1s linear;
+    transition: transform .3s linear, opacity 1s ease-in-out;
 }
 
 .toleft {
     transform: translateX(70px);
     opacity: 0;
-    transition: transform .5s linear, opacity 0.9s linear;
+    transition: transform .5s linear, opacity 0.9s ease-in-out;
 }
 
+.tobottom {
+    transform: translateY(70px);
+    opacity: 0;
+    transition: transform .5s linear, opacity 0.9s ease-in-out;
+}
+
+.toopacity {
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.toopacity.element-show{
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.tobottom.element-show,
 .toright.element-show,
 .toleft.element-show {
     transform: none;

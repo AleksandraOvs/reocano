@@ -11,7 +11,7 @@ Template Post Type: post
 <section class="page-section">
     <div class="page-header__inner">
         <div class="fixed-container">
-            <h2 class="site-page__title toright white"> <?php the_title(); ?> </h2>
+            <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
         </div>
     </div>
 

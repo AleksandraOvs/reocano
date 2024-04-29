@@ -61,18 +61,19 @@ a:hover {
 a.button,
 .wpcf7-submit.has-spinner {
     display: block;
-    background: rgba(1,175,51,.7);
+    background: rgba(1, 175, 51, .7);
     text-align: center;
     font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
     font-family: 'Cakra';
     font-weight: 400;
+    letter-spacing: 3px;
     padding: 15px 35px;
     color: #fff;
     border-radius: 3px;
     width: 300px;
-    border: 1px solid rgba(1,175,51,.7);
+    border: 1px solid rgba(1, 175, 51, .7);
     transition: all .3s linear;
 }
 
@@ -208,6 +209,10 @@ h2.site-page__title:before {
     /* padding: 0 5%; */
     margin: 0 auto;
     z-index: 3;
+}
+
+.white{
+    color: #fff;
 }
 
 .flex {
@@ -1994,6 +1999,12 @@ ul.breadcrumbs__list {
 }
 
 /*PAGE PROGRAMMS**/
+
+body.programms-template-default.single.single-programms {
+    /* background: #000; */
+    background: rgb(71, 104, 80);
+    background: radial-gradient(circle, rgba(71, 104, 80, 1) 0%, rgba(26, 38, 29, 1) 100%);
+}
 
 .programms-posts__grid__item {
     display: block;

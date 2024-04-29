@@ -34,7 +34,7 @@
 						</a>
 
 						<div class="header__top__left__content">
-							<h1 style="visibility: hidden;"><?php echo get_bloginfo('name') ?></h1>
+							<h1><?php echo get_bloginfo('name') ?></h1>
 							<p><?php echo get_bloginfo('description') ?></p>
 						</div>
 

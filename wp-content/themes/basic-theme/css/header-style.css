@@ -115,8 +115,7 @@ span.sr-only {
     color: var(--black);
     font-size: 14px;
     text-align: left;
-    font-weight: 300;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .header__top__left{
@@ -259,7 +258,7 @@ li.social__item .social__link img {
 }
 
 .header__top__left {
-    width:40%;
+    width:50%;
     transition: all .5s ease-in;
 }
 

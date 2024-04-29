@@ -1611,7 +1611,7 @@ span.swiper-pagination-bullet {
 /*SINGLE BOOK*/
 
 .page-section__content .fixed-container {
-    background: url(../images/paper.svg) no-repeat;
+    background: url(../images/paper2.svg) no-repeat;
     background-position: center bottom;
     background-size:cover;
     transform: translateY(-20px);

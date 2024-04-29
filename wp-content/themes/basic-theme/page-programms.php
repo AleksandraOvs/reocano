@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main template file
+ * Template name: page programms
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -18,48 +18,46 @@ get_header(); ?>
     <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
                                 ?>>
         <div class="page-header__inner">
+        <?php
+        if (has_post_thumbnail()) { // условие, если есть миниатюра
+            the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
+        } 
+        ?>
             <div class="fixed-container">
-                <ul class="breadcrumbs__list">
-                    <?php echo true_breadcrumbs(); ?>
-                </ul>
-                <h2 class="site-page__title toright"> <?php the_title(); ?> </h2>
+                <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
             </div>
         </div>
 
+        <div class="fixed-container">
+
         <?php
-        $args = array(
-            'post_type' => 'programms',
-            'publish' => true,
-            //'paged' => get_query_var('paged'),
-        );
-        query_posts($args);
-        if (have_posts()) : ?>
-            <div class="fixed-container">
-
-                <?php while (have_posts()) : the_post(); ?>
-                    <a href="<?php echo the_permalink() ?>" class="programms-posts__grid__item">
-                        <div class="programms-posts__grid__item__img">
-                        
-                            <?php echo get_the_post_thumbnail() ?>
-
-                            <div class="programms-posts__grid__item__summary">
-                                <div class="programms-posts__grid__item__head">
-                                    <h3><?php the_title(); ?></h3>
-                                    <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+            $args = array(
+                'post_type' => 'programms',
+                'publish' => true,
+                //'paged' => get_query_var('paged'),
+            );
+            query_posts($args);
+            if (have_posts()) : ?>
+                <ul class="programms__list">
+                    <?php while (have_posts()) : the_post(); ?>
+                        <li class="programms__list__item">
+                            <div class="programms__list__item__content">
+                                <h3 class="white"><?php the_title(); ?></h3>
+                                <div class="white programms__excerpt"><?php the_excerpt() ?>
                                 </div>
-                                <!-- <a href="<?php //echo the_permalink() 
-                                                ?>" class="entry-post__button-more">
-                                    <span>Подробнее</span>
-                                </a> -->
                             </div>
-                        </div>
 
-                    </a>
-                <?php endwhile; ?>
+                            <div class="programms__list__item__more">
+                                <a href="<?php the_permalink() ?>" class="programms__more-button button">Узнать подробнее</a>
+                            </div>
+
+
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+            <?php endif; ?>
 
             </div>
-        <?php endif; ?>
-
 
 
     </section>

@@ -173,6 +173,10 @@ p {
     justify-content: space-between; */
 }
 
+section.site-page {
+    padding-bottom: 7%;
+}
+
 .site-page__content {
     padding: 40px 0;
 }
@@ -1763,9 +1767,7 @@ span.swiper-pagination-bullet {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgb(0, 24, 7);
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 25%); */
-    background: linear-gradient(180deg, rgba(25, 25, 25, .95) 0%, rgba(25, 25, 25, 0));
+    background: rgba(0,0,0, .5);
     position: absolute;
     top: 0;
     left: 0;
@@ -2027,7 +2029,8 @@ ul.breadcrumbs__list {
 
 /*PAGE PROGRAMMS**/
 
-body.programms-template-default.single.single-programms {
+body.programms-template-default.single.single-programms,
+body.page-template.page-template-page-programms {
     /* background: #000; */
     background: rgb(71, 104, 80);
     background: radial-gradient(circle, rgba(71, 104, 80, 1) 0%, rgba(26, 38, 29, 1) 100%);

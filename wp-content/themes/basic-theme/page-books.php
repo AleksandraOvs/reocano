@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main template file
+ * Template name: Books
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).

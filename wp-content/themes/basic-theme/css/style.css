@@ -1451,7 +1451,8 @@ a.programms__more-button.button:hover{
 .entry-post__books__item .button:hover{
     background: none;
     border: none;
-    color: var(--green);
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .entry-post__books__item .book-link .entry-post__excerpt {

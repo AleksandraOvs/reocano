@@ -24,7 +24,7 @@ get_header(); ?>
         } 
         ?>
             <div class="fixed-container">
-                <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
+                <h2 class="site-page__title toopacity white"> Авторские программы </h2>
             </div>
         </div>
 

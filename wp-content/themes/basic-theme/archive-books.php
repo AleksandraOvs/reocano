@@ -23,7 +23,7 @@ get_header(); ?>
         } 
         ?>
             <div class="fixed-container">
-                <h2 class="site-page__title toright"> <?php the_title(); ?> </h2>
+                <h2 class="site-page__title toright"> Наши книги </h2>
             </div>
         </div>
 

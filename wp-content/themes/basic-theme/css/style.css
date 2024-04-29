@@ -1340,7 +1340,7 @@ ul.programms__list li:first-child:before{
     top: 0;
 }
 
-a.programms__more-button.button {
+/* a.programms__more-button.button {
     border-color: #fff;
     color: #fff;
     width: 100%;
@@ -1351,7 +1351,7 @@ a.programms__more-button.button:hover{
     border-color:var(--black);
     color: #fff;
     transition: all .3s ease-in-out;
-}
+} */
 /*BOOKS*/
 
 .section-books .fixed-container h2 {
@@ -1605,8 +1605,8 @@ span.swiper-pagination-bullet {
 }
 
 .more-book-button:hover{
-    background: rgba(25,25,25,1);
-    border: rgb(25,25,25);
+    background: rgba(1, 175, 52, .7);
+    border: 1px solid rgba(1, 175, 52, .7);
     color: #fff;
     transition: all .3s ease-in-out;
 }

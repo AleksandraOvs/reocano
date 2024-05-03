@@ -1398,10 +1398,10 @@ p.popup-description {
     text-align: center;
 }
 
-.section-programms .fixed-container{
+/* .section-programms .fixed-container{
     padding-right: 10%;
     padding-left: 10%;
-}
+} */
 
 ul.programms__list {
     margin-top: 70px;

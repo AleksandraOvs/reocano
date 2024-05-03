@@ -1253,6 +1253,7 @@ p.popup-description {
 
 .entry-post__inner__head h3 {
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 3px;
     margin-bottom: 20px;
     margin-top: 20px;

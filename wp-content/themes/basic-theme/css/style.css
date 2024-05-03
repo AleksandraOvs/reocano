@@ -507,6 +507,10 @@ a.hero-button:hover{
     height: 100%;
     width: 70%;
     background: #fff;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-backdrop-filter: blur(50px);
+    -ms-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     position: relative;
@@ -610,7 +614,11 @@ a.hero-button.button.fill:hover {
 
 .subs-item {
     position: relative;
-    backdrop-filter: blur(2px);
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    -ms-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
 
@@ -719,6 +727,10 @@ span.wpcf7-form-control-wrap .cf-textarea {
 
 /*MAIN PAGE*/
 .about-items-list .e-con-inner .about-item {
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    -ms-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
 }
 
@@ -1340,7 +1352,11 @@ p.popup-description {
     position: absolute;
     background: url(../images/palms.svg) no-repeat;
     background-size: cover;
-    backdrop-filter: blur(530px);
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    -ms-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     opacity: .4;
     background-position: center;
 }
@@ -2047,6 +2063,11 @@ ul.breadcrumbs__list {
     background: rgb(0, 24, 7);
     /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 25%); */
     background: linear-gradient(180deg, rgba(25, 25, 25, .95) 0%, rgba(25, 25, 25, 0));
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     position: absolute;
     top: 0;
     left: 0;
@@ -2169,6 +2190,10 @@ body.page-template.page-template-page-programms {
     padding: 10px 0;
     text-align: center;
     background: rgba(25, 25, 25, .7);
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    -ms-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     color: #fff;
     z-index:  3;
@@ -2293,7 +2318,11 @@ body.page-template.page-template-page-programms {
         z-index: 10;
         /* background: rgba(255, 255, 255, .5); */
         /* border-bottom: 1px solid #111; */
-        /* backdrop-filter: blur(30px); */
+        backdrop-filter: blur(30px);
+        filter: blur(30px);
+    -webkit-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    -ms-backdrop-filter: blur(30px);
         -webkit-backdrop-filter: none;
         align-items: center;
     }

@@ -2114,8 +2114,7 @@ ul.breadcrumbs__list {
 body.programms-template-default.single.single-programms,
 body.page-template.page-template-page-programms {
     /* background: #000; */
-    background: rgb(71, 104, 80);
-    background: radial-gradient(circle, rgba(71, 104, 80, 1) 0%, rgba(26, 38, 29, 1) 100%);
+    background: var(--dark-green);
 }
 
 .programms-posts__grid__item {

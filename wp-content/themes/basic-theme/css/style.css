@@ -2923,3 +2923,15 @@ transition: all .3s ease-in-out;
         font-size: 50px !important;
     }
 }
+
+.elementor-widget-text-editor .elementor-drop-cap {
+    float: unset;
+    margin-right: 5px;
+    /* position: absolute; */
+    font-family: 'Cakra';
+    width: 30px;
+    text-align: left;
+    line-height: 100%;
+    font-size: 46px;
+    color: var(--dark-green);
+}

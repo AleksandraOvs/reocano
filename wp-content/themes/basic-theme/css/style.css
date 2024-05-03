@@ -2926,14 +2926,14 @@ transition: all .3s ease-in-out;
 
 .elementor-widget-text-editor .elementor-drop-cap {
     float: unset !important;
-    margin-right: 0 !important;
-    font-weight: 600;
+    margin-right: 10px !important;
+    font-weight: 400;
     text-align: left !important;
     /* position: absolute; */
     /* font-family: 'Cakra'; */
     width: 30px;
     text-align: left;
     line-height: 100%;
-    font-size: 46px;
+    font-size: 75px !important;
     color: var(--dark-green);
 }

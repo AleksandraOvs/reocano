@@ -129,6 +129,10 @@ span.sr-only {
     color: #fff;
 }
 
+.header__top__left__content h1 {
+    font-size: 24px;
+}
+
 a.site-header__logo {
     display: block;
 }
@@ -261,6 +265,11 @@ li.social__item .social__link img {
 .header__top__left {
     width:25%;
     transition: all .5s ease-in;
+}
+
+.header__top__left__content p {
+    line-height: 100%;
+    font-size: 14px;
 }
 
 .header a {

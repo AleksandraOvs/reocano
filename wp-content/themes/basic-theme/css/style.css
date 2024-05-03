@@ -2052,6 +2052,11 @@ ul.breadcrumbs__list {
 }
 
 .page-section__header .fixed-container h2 {
+    font-size: 32px;
+    width: 70%;
+}
+
+.page-section__header .fixed-container h2 {
     color: #fff;
 }
 

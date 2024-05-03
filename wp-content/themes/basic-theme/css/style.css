@@ -111,10 +111,10 @@ h1 {
     margin: 0;
     line-height: 1;
 }
-
+/* 
 .background-grey {
     background: #eeeeee;
-}
+} */
 
 @media (max-width: 1200px) {
     h1 {
@@ -321,7 +321,7 @@ main.main {
     fill: rgba(1, 175, 52, 1);
 }
 
-.destr-img div img {
+.destr-img div img, .destr-img {
     opacity: .5;
     filter: saturate(0);
     -webkit-filter: saturate(0);
@@ -330,7 +330,7 @@ main.main {
     transition: filter 1s ease-in, opacity .5s linear;
 }
 
-.destr-img.element-show div img {
+.destr-img.element-show div img, .destr-img.element-show {
     opacity: 1;
     filter: saturate(1);
     -webkit-filter: saturate(1);
@@ -1137,16 +1137,17 @@ p.popup-description {
     gap: 40px;
     margin-top: 40px;
 }
-
+/* 
 .entry-img {
+    display: block;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     position: absolute;
     overflow: hidden;
-}
-
+} */
+/* 
 .entry-img:after {
     content: '';
     display: block;
@@ -1156,6 +1157,14 @@ p.popup-description {
     position: absolute;
     top: 0;
     left: 0;
+} */
+
+
+.posts__grid{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
 }
 
 .entry-img img {
@@ -1167,10 +1176,30 @@ p.popup-description {
 
 .entry-post__inner {
     position: relative;
-    display: flex;
-    padding: 20px;
-    border: none;
-    border-radius: 3px;
+    column-gap: 50px;
+    padding: 40px 0;
+}
+
+.entry-post__inner .entry-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: block;
+}
+
+.entry-post__inner__head p {
+    margin-bottom: 30px;
+}
+
+.section-blog__desc {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 40px;
+}
+
+.posts__grid .entry-post__inner:nth-child(2n) {
+    flex-direction: row-reverse;
 }
 
 .archive-posts__grid .entry-post__inner .entry-post__inner__head {
@@ -1225,7 +1254,8 @@ p.popup-description {
 .entry-post__inner__head h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .entry-post__inner__head__summary {
@@ -1419,7 +1449,8 @@ a.programms__more-button.button:hover{
 } */
 /*BOOKS*/
 
-.section-books .fixed-container h2 {
+.section-books .fixed-container h2,
+.section-blog .fixed-container h2 {
     text-align: center;
 }
 
@@ -1438,7 +1469,7 @@ a.programms__more-button.button:hover{
 }
 
 .books-slider {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .entry-post__books {

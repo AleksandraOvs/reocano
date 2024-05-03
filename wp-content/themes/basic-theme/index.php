@@ -31,7 +31,7 @@ get_header(); ?>
             <?php endif; ?>
 
             <?php if(have_posts()) : ?>
-              <div class="archive-posts__grid">
+              <div class="posts__grid">
                 <?php 
               while(have_posts() ) : the_post();
 

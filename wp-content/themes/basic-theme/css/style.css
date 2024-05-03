@@ -2925,10 +2925,12 @@ transition: all .3s ease-in-out;
 }
 
 .elementor-widget-text-editor .elementor-drop-cap {
-    float: unset;
-    margin-right: 5px;
+    float: unset !important;
+    margin-right: 0 !important;
+    font-weight: 600;
+    text-align: left !important;
     /* position: absolute; */
-    font-family: 'Cakra';
+    /* font-family: 'Cakra'; */
     width: 30px;
     text-align: left;
     line-height: 100%;

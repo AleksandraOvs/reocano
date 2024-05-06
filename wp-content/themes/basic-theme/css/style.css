@@ -1177,7 +1177,8 @@ p.popup-description {
 .entry-post__inner {
     position: relative;
     column-gap: 50px;
-    padding: 40px 0;
+    padding: 40px 20px;
+    transition: all .7s ease-in-out;
 }
 
 .entry-post__inner .entry-img {
@@ -1185,6 +1186,12 @@ p.popup-description {
     height: 200px;
     overflow: hidden;
     display: block;
+   
+}
+
+.entry-post__inner:hover{
+    background: rgba(87, 102, 91, .3);
+    transition: all .7s ease-in-out;
 }
 
 .entry-post__inner__head p {
@@ -1270,6 +1277,13 @@ p.popup-description {
     justify-content: space-between;
 }
 
+.entry-post__inner__head .button {
+    background: transparent;
+    border: none;
+    color: var(--black);
+    padding: 0;
+    margin-top: 30px;
+}
 
 
 /* 

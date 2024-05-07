@@ -1412,7 +1412,7 @@ p.popup-description {
     background: url(../images/el.svg);
     background-repeat: no-repeat;
     background-size: 15%;
-    background-position: left top;
+    background-position: left 10%;
     z-index: 5;
     opacity: 1;
 } 

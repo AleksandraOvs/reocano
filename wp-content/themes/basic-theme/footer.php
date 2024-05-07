@@ -94,6 +94,8 @@ echo do_shortcode("$shcode"); ?>
     				                    $thumb_contact = wp_get_attachment_image_url( $messenger['crb_mes_image'], 'full' );
 				                    ?>	
 									<img width="25" height="25" src="<?php echo $thumb_contact; ?>" alt="<?php echo $messenger[ 'crb_mes_name']; ?>">
+
+									<p><?php echo $messenger[ 'crb_mes_name']; ?></p>
   						        </a>
     				        </li>
 				            <?php

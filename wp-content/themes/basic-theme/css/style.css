@@ -1810,9 +1810,22 @@ span.swiper-pagination-bullet {
 /*blog*/
 
 .section-blog {
+    position:relative;
     padding: 7% 0;
     background: rgb(28,50,34);
 background: linear-gradient(0deg, rgba(28,50,34,1) 0%, rgba(87,102,91,1) 100%);
+}
+
+.section-blog:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/palms.svg);
+    background-size: cover;
 }
 
 .section-blog .fixed-container h2{

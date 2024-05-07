@@ -221,6 +221,11 @@ h2.site-page__title:before {
     z-index: 5;
 }
 
+.full-width-container{
+    width: 100%;
+    padding: 7% 3%;
+}
+
 .post-type-archive-programms,
 body.blog,
 .post-type-archive-books{

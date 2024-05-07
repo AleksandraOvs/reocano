@@ -11,7 +11,7 @@
     </div>
 
     <div class="section-books background-grey">
-        <div class="fixed-container">
+        <div class="full-width-container">
             <?php get_template_part('templates/books') ?>
         </div>
     </div>

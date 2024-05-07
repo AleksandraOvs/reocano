@@ -60,7 +60,7 @@ const books_swiper = new Swiper('.books-slider', {
   grabCursor: true,
   spaceBetween: 20,
   centeredSlides: false,
-  slidesPerView: 1,
+  slidesPerView: 1.5,
   loop: false,
   // autoplay: {
   //   delay: 5000,

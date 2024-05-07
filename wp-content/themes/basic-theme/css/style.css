@@ -1639,12 +1639,7 @@ a.programms__more-button.button:hover{
     padding: 10px;
     cursor: pointer;
     border-radius: 100%;
-    background: rgba(255, 255, 255, .3);
-    backdrop-filter: blur(50px);
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
-    -moz-backdrop-filter: blur(50px);
-    -ms-backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(50px);
     bottom: 45%;
     z-index: 5;

@@ -58,10 +58,10 @@ const swiper = new Swiper('.hero-slider', {
 const books_swiper = new Swiper('.books-slider', {
   //effect: "coverflow",
   grabCursor: true,
-  spaceBetween: 20,
-  centeredSlides: false,
+  //spaceBetween: 20,
+  centeredSlides: true,
   slidesPerView: 1.5,
-  loop: false,
+  loop: true,
   // autoplay: {
   //   delay: 5000,
   //   disableOnInteraction: false,

@@ -2120,6 +2120,7 @@ ul.footer__menu__messengers {
 
 li.footer__menu__messengers__item a {
     display: flex;
+    font-size: 14px;
 }
 
 li.footer__menu__messengers__item a img{

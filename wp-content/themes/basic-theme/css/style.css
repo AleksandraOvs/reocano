@@ -1640,11 +1640,11 @@ a.programms__more-button.button:hover{
 }
 
 .books-slider__button-prev {
-    left: 0;
+    left: 20px;
 }
 
 .books-slider__button-next {
-    right: 0;
+    right: 20px;
 }
 
 .books-slider__button-prev svg, .books-slider__button-next svg{
@@ -1659,9 +1659,9 @@ a.programms__more-button.button:hover{
 }
 
 .swiper.books-slider {
-    /* width: 50%; */
+    /* width: 50%; 
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 30px;*/
 }
 
 .books-slider__button-prev:hover svg path,

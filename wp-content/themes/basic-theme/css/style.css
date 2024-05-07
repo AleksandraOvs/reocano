@@ -1183,8 +1183,26 @@ p.popup-description {
 .entry-post__inner {
     position: relative;
     column-gap: 50px;
-    padding: 40px 20px;
+    padding: 40px 0;
     transition: all .7s ease-in-out;
+}
+
+.entry-post__inner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    background:#fff;
+    transform: scale(0);
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+}
+
+.entry-post__inner:hover:after{
+transform: scale(1);
+transition: all .5s ease-in-out;
 }
 
 .entry-post__inner .entry-img {
@@ -1195,20 +1213,8 @@ p.popup-description {
    
 }
 
-.entry-post__inner:hover{
-    background: rgba(87, 102, 91, .3);
-    transition: all .7s ease-in-out;
-}
-
 .entry-post__inner__head p {
     margin-bottom: 30px;
-}
-
-.section-blog__desc {
-    text-align: center;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-bottom: 40px;
 }
 
 .posts__grid .entry-post__inner:nth-child(2n) {
@@ -1267,6 +1273,7 @@ p.popup-description {
 .entry-post__inner__head h3 {
     text-transform: uppercase;
     text-align: center;
+    color: #fff;
     letter-spacing: 3px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -1286,9 +1293,11 @@ p.popup-description {
 .entry-post__inner__head .button {
     background: transparent;
     border: none;
-    color: var(--black);
+    font-family: 'Cera';
+    color: #fff;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 40px;
+    width: 100%;
 }
 
 
@@ -1531,7 +1540,7 @@ a.programms__more-button.button:hover{
     margin: 0;
     margin-top: 40px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
 }
 
 .swiper-slide.books-slider__slide.swiper-slide-active {
@@ -1796,6 +1805,27 @@ span.swiper-pagination-bullet {
     border: 1px solid rgba(1, 175, 52, .7);
     color: #fff;
     transition: all .3s ease-in-out;
+}
+
+/*blog*/
+
+.section-blog {
+    padding: 7% 0;
+    background: rgb(28,50,34);
+background: linear-gradient(0deg, rgba(28,50,34,1) 0%, rgba(87,102,91,1) 100%);
+}
+
+.section-blog .fixed-container h2{
+    color: #fff;
+}
+
+
+.section-blog__desc {
+    color: #fff;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 40px;
 }
 
 /*SINGLE BOOK*/

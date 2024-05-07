@@ -28,7 +28,8 @@ body {
     font-size: 18px;
     color: #000;
     line-height: 1.6;
-    background-color: var(--light-green);
+    background: rgb(231,231,231);
+    background: var(--white-gradient);
     width: 100%;
     overflow-x: hidden;
 }
@@ -223,7 +224,7 @@ h2.site-page__title:before {
 
 .full-width-container{
     width: 100%;
-    padding: 7% 3%;
+    padding: 5% 0;
 }
 
 .post-type-archive-programms,

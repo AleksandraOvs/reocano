@@ -23,3 +23,7 @@
     object-fit: cover;
     object-position: center;
 }
+
+.about-us-slider .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel {
+    gap: 20px;
+}

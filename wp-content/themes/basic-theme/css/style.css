@@ -1167,8 +1167,7 @@ p.popup-description {
 
 .posts__grid{
     display: grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 250px) 30%;
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 40px;
 }
 

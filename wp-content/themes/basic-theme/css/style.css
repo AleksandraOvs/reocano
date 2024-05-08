@@ -3157,7 +3157,7 @@ transition: all .3s ease-in-out;
 
 .elementor-widget-text-editor .elementor-drop-cap {
     float: unset !important;
-    margin-right: 5px !important;
+    margin-right: 2px !important;
     font-weight: 400;
     text-align: left !important;
     /* position: absolute; */

@@ -2863,7 +2863,6 @@ body.page-template.page-template-page-programms {
     .section-hero__slider {
         position: relative;
         z-index: 5;
-        margin-top: 30px;
         transform: none;
     }
 

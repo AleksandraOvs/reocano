@@ -17,6 +17,9 @@
                 <ul class="programms__list">
                     <?php while (have_posts()) : the_post(); ?>
                         <li class="programms__list__item">
+                            <div class="programms__list__item__thumb">
+                            <?php the_post_thumbnail('medium', array('class' => 'destr-img'));?>
+                            </div>
                             <div class="programms__list__item__content">
                                 <h3><?php the_title(); ?></h3>
                                 <div class="programms__excerpt"><?php the_excerpt() ?>

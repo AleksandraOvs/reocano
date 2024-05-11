@@ -1499,27 +1499,44 @@ li.programms__list__item {
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 100px 3fr 1fr;
     column-gap: 50px;
     padding: 40px 0;
 }
 
-li.programms__list__item:after {
+li.programms__list__item:last-child:after {
     content: '';
     width: 100%;
     height: 1px;
     background: var(--dark-green);
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
-ul.programms__list li:first-child:before{
+ul.programms__list li:before{
     content: '';
     width: 100%;
     height: 1px;
     background: var(--dark-green);
     position: absolute;
     top: 0;
+    left: 0;
+}
+
+.programms__list__item__thumb {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid var(--dark-green);
+}
+
+.programms__list__item__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 a.programms__more-button.button {
@@ -1602,7 +1619,7 @@ a.programms__more-button.button:hover{
     position: relative;
     background: #fff;
     transform: scale(1.05);
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .4));
+    filter: drop-shadow(0px 0px 20px rgba(50, 50, 50, .2));
     /* border: 7px solid #fff; */
     z-index: 5;
     transition: all .3s ease-in-out;
@@ -2692,6 +2709,7 @@ body.page-template.page-template-page-programms {
 
     li.programms__list__item {
         display: block;
+        text-align:center;
     }
 
     .programms__list__item__more {
@@ -2699,9 +2717,24 @@ body.page-template.page-template-page-programms {
     }
 
     a.programms__more-button.button {
-        max-width: 40%;
+        margin: 0 auto;
+        /* max-width: 40%;
         background: #fff;
-        color: var(--dark-green);
+        color: var(--dark-green); */
+    }
+
+    .programms__list__item__thumb {
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+
+    li.programms__list__item {
+        padding-top: 70px;
+    }
+
+    ul.programms__list li:not(:first-child) {
+        margin-top: 70px;
     }
 
     .entry-post__books__item .book-link .entry-post__excerpt {

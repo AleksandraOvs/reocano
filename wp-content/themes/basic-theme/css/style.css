@@ -1185,7 +1185,7 @@ p.popup-description {
     cursor: pointer;
     height: 350px;
     overflow:hidden;
-    padding: 40px 0;
+    padding: 20px 0;
     transition: all .7s ease-in-out;
 }
 
@@ -1193,13 +1193,13 @@ p.popup-description {
     content: '';
     display: block;
     position: absolute;
-    width: 100%;
+    width: 105%;
     /* background: rgba(0, 0, 0, 1); */
     background: rgba(0, 0, 0, .5);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
     opacity: 1;
     /* transform: scale(0); */
-    height: 100%;
+    height: 105%;
     left: 0;
     bottom: 0;
     z-index: 2;
@@ -1211,8 +1211,12 @@ p.popup-description {
 transition: all .5s ease-in-out;
 }
 
-.swiper.posts-slider {
+.swiper.posts-slider .swiper-wrapper {
     height: 400px;
+}
+
+.swiper.posts-slider {
+    padding-bottom: 50px;
 }
 
 .posts-slider__pagination {
@@ -1255,7 +1259,7 @@ transition: all .5s ease-in-out;
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 3;
 }
 
@@ -1330,8 +1334,8 @@ transition: all .5s ease-in-out;
     text-align: center;
     color: #fff;
     letter-spacing: 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .entry-post__inner__head__summary {

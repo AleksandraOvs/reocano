@@ -1528,6 +1528,7 @@ ul.programms__list li:before{
     width: 100px;
     height: 100px;
     overflow: hidden;
+    background: #fff;
     border-radius: 100%;
     border: 3px solid var(--dark-green);
 }

@@ -27,7 +27,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #000;
-    line-height: 1.6;
+    line-height: 130%;
     background: rgb(231,231,231);
     background: var(--white-gradient);
     width: 100%;

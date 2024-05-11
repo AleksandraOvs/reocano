@@ -1330,10 +1330,12 @@ transition: all .5s ease-in-out;
 }
 
 .entry-post__inner__head h3 {
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     text-align: center;
+    font-weight: 300;
+    font-family: 'Cera';
     color: #fff;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     font-size: 20px;
     margin-bottom: 10px;
 }

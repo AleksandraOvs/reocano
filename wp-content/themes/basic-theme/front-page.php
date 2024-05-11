@@ -29,15 +29,17 @@
             ]);
 
             ?>
-            <div class="posts__grid">
+            <div class="swiper posts-slider">
+            <!-- <div class="posts__grid"> -->
+            <div class="swiper-wrapper">
             <?php
 
             while ($query->have_posts()) {
                 $query->the_post();
             ?>
-                <div class="entry-post__inner">
+                <div class="entry-post__inner swiper-slide">
 
-                    <a href="<?php the_permalink() ?>" class="entry-img">
+                    <div  class="entry-img">
                         <?php if (has_post_thumbnail()) {
                             the_post_thumbnail('full', array('class' => 'destr-img'));
                         } else {
@@ -45,12 +47,12 @@
                                 . '/images/placeholder.jpg" />';
                         } ?>
 
-                    </a>
-                    <div class="entry-post__inner__head">
+                    </div>
+                    <a href="<?php the_permalink() ?>" class="entry-post__inner__head">
                         <h3><?php the_title(); ?></h3>
                         <?php //the_excerpt() ?>
-                        <a href="<?php echo the_permalink() ?>" class="button">Читать далее</a>
-                    </div>
+                        <span>Читать далее</span>
+                    </a>
 
                 </div>
             <?php
@@ -59,6 +61,9 @@
 
             wp_reset_postdata(); // ВАЖНО вернуть global $post обратно
             ?>
+            
+            </div>
+            <div class="posts-slider__pagination"></div>
             </div>
         </div>
     </div>

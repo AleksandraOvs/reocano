@@ -109,7 +109,60 @@ const books_swiper = new Swiper('.books-slider', {
 
   })
 
-
+  const posts_swiper = new Swiper('.posts-slider', {
+    //effect: "coverflow",
+    grabCursor: true,
+    spaceBetween: 50,
+    //centeredSlides: true,
+    slidesPerView: 1,
+    //loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    // coverflowEffect: {
+    //   rotate: 50,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows: true,
+    // },
+    navigation: {
+      nextEl: '.posts-slider__button-next',
+      prevEl: '.posts-slider__button-prev',
+    },
+    pagination: {
+      el: '.posts-slider__pagination',
+      dynamicBullets: true,
+      clickable: true,
+    },
+    breakpoints: {
+      
+      1024:{
+        slidesPerView: 3,
+        centeredSlides: true,
+        loop: true
+      },
+  
+      // 768:{
+      //   slidesPerView: 2.5,
+      //     centeredSlides: true,
+      //     loop: true
+      // },
+      
+      // 992: {
+      //     slidesPerView: 1.3,
+      //     centeredSlides: true,
+      //     loop: true
+      //     //slideToClickedSlide: true,
+      // },
+  
+      // 1200:{
+      //   slidesPerView: 3,
+      // }
+    }
+  
+    })
 
   $('.elementor-slider .e-con-inner').slick({
     dots: true,
@@ -127,3 +180,5 @@ const books_swiper = new Swiper('.books-slider', {
       }
     }]
   })
+
+ 

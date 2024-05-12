@@ -108,9 +108,9 @@
     font-weight:400;
     src:
     /* local("Cakra"),  */
-    url(../fonts/Cakra.ttf) format("truetype");
-    /* url(../fonts/Cakra.woff2) format("woff2"),
-    url(../fonts/Cakra.woff) format("woff"); */
-    
+    url(../fonts/Cakra.ttf) format("truetype"),
+    url(../fonts/Cakra.otf) format("opentype"),
+    url(../fonts/Cakra.woff2) format("woff2"),
+    url(../fonts/Cakra.woff) format("woff");
     font-display: swap;
 }

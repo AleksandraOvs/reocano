@@ -112,7 +112,7 @@ jQuery(document).ready(function($)  {
     }
     let options = { threshold: [0.5] };
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll('.toright, .toleft, .destr-img, .toopacity');
+    let elements = document.querySelectorAll('.toright, .toleft, .destr-img, .toopacity, .animateBlur, .animateScale, .tobottom');
     for (let elm of elements) {
       observer.observe(elm);
     }

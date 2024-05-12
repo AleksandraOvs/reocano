@@ -7,7 +7,7 @@
 <?php
     if ($hero_img = carbon_get_theme_option('crb_hero-image')) {
         $hero_img_url = wp_get_attachment_image_url($hero_img, 'full');
-        echo '<img src="' . $hero_img_url . '" class="hero2-image destr-img" alt="">';
+        echo '<img src="' . $hero_img_url . '" class="hero2-image animateBlur" alt="">';
     }
     ?>
 

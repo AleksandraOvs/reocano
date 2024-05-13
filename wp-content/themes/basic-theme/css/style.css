@@ -151,7 +151,6 @@ h3 {
     font-weight: 400;
     font-family: 'Cakra';
     line-height: 100%;
-    letter-spacing: 3px;
     margin: 0;
     margin-bottom: 10px;
 }
@@ -189,7 +188,6 @@ h2.site-page__title {
     /* color: var(--black); */
     line-height: 1;
     margin-bottom: 30px;
-    letter-spacing: 3px;
 }
 
 h2.site-page__title.toopacity {

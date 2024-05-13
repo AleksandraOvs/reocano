@@ -103,17 +103,17 @@ jQuery(document).ready(function($)  {
     }
     arrowUp();
 
-//     function onEntry(entry) {
-//       entry.forEach(change => {
-//         if (change.isIntersecting) {
-//           change.target.classList.add('element-show');
-//         }
-//       });
-//     }
-//     let options = { threshold: [0.5] };
-//     let observer = new IntersectionObserver(onEntry, options);
-//     let elements = document.querySelectorAll('.toright, .toleft, .destr-img, .toopacity, .animateBlur, .animateScale, .tobottom');
-//     for (let elm of elements) {
-//       observer.observe(elm);
-//     }
-// })
+    function onEntry(entry) {
+      entry.forEach(change => {
+        if (change.isIntersecting) {
+          change.target.classList.add('element-show');
+        }
+      });
+    }
+    let options = { threshold: [0.5] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.toright, .toleft, .destr-img, .toopacity, .animateBlur, .animateScale, .tobottom');
+    for (let elm of elements) {
+      observer.observe(elm);
+    }
+})

@@ -23,7 +23,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cera", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #000;
@@ -67,7 +67,7 @@ a.button,
     font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: 'Cakra';
     font-weight: 400;
     letter-spacing: 3px;
     padding: 15px 35px;
@@ -102,7 +102,7 @@ a.button:hover,
 }
 
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Cakra';
     position: relative;
     text-align: center;
     font-size: 60px;
@@ -138,7 +138,7 @@ h1 {
 
 h2 {
     font-size: 42px;
-    font-family: 'Montserrat';
+    font-family: 'Cakra';
     margin: 0;
     line-height: 1.2;
     color: var(--black);
@@ -149,7 +149,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Cakra';
     line-height: 100%;
     letter-spacing: 3px;
     margin: 0;
@@ -487,7 +487,7 @@ a.hero-button{
     /* backdrop-filter: blur(20px); */
     line-height: 1;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: 'Cakra';
     font-weight: 400;
     padding: 15px 20px;
     color: #fff;
@@ -1269,7 +1269,7 @@ transition: all .5s ease-in-out;
 .entry-post__inner__head span{
     font-size:18px;
     text-decoration: underline;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cera', sans-serif;
     display:block;
     color: #fff;
     margin:0 auto;
@@ -1332,7 +1332,7 @@ transition: all .5s ease-in-out;
     /*text-transform: uppercase; */
     text-align: center;
     font-weight: 300;
-    font-family: 'Montserrat';
+    font-family: 'Cera';
     color: #fff;
     /* letter-spacing: 3px; */
     font-size: 20px;
@@ -1353,7 +1353,7 @@ transition: all .5s ease-in-out;
 .entry-post__inner__head .button {
     background: transparent;
     border: none;
-    font-family: 'Montserrat';
+    font-family: 'Cera';
     color: #fff;
     padding: 0;
     margin-top: 40px;
@@ -1706,7 +1706,7 @@ transition: all .3s ease-in-out;
 .entry-post__books__item h3 {
     position: relative;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cera', sans-serif;
     line-height: 120%;
     letter-spacing: 0;
     text-align: center;
@@ -3247,7 +3247,7 @@ transition: all .3s ease-in-out;
     font-weight: 400;
     text-align: left !important;
     /* position: absolute; */
-    /* font-family: 'Montserrat'; */
+    /* font-family: 'Cakra'; */
     width: 30px;
     text-align: left;
     line-height: 100%;

@@ -77,7 +77,7 @@ function site_scripts(){
 	wp_enqueue_script ('js-tabs-ui', '//code.jquery.com/ui/1.12.1/jquery-ui.js', array('jquery'), null, true);
 	wp_enqueue_script ('fancy_scripts', get_stylesheet_directory_uri() . '/inc/fancybox/jquery.fancybox.min.js', array('jquery'), null, true);
    // wp_enqueue_script ('js-accordion', get_stylesheet_directory_uri() . '/js/accordion.js', array('jquery'), null, true);
-    //wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+    wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
     wp_enqueue_style ('swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
     wp_enqueue_script('slider-scripts', 'https://unpkg.com/swiper/swiper-bundle.min.js',array('jquery'), null, true);
     wp_enqueue_script('slick-scripts', get_stylesheet_directory_uri() . '/inc/slick/slick.min.js',array('jquery'), null, true);

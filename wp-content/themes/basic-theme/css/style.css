@@ -1528,6 +1528,8 @@ ul.programms__list li:before{
 }
 
 .programms__list__item__thumb {
+    position: relative;
+    z-index: 5;
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -1545,6 +1547,23 @@ ul.programms__list li:before{
 
 a.programms__more-button.button {
     background: var(--dark-green);
+}
+
+.programms-thumb {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.programms-thumb:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    top: 50%;
 }
 
 /* a.programms__more-button.button {
@@ -2273,10 +2292,12 @@ ul.breadcrumbs__list {
 .page-header__inner {
     position: relative;
     padding-top: 140px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     width: 100%;
     overflow: hidden;
 }
+
+
 
 .page-header__inner img {
     position:absolute;
@@ -2495,6 +2516,22 @@ body.programms-template-default.single.single-programm {
     color: #fff;
 }
 
+body.programms-template-default.single.single-programms {
+    position:relative;
+    background: var(--green);
+}
+
+body.programms-template-default.single.single-programms {
+
+}
+
+.page-header__inner.solid.header-programms {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+}
 @media (max-width: 1440px) {
 
     .section-hero__img .fixed-container {

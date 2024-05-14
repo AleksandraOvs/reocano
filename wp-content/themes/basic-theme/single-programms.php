@@ -9,11 +9,17 @@ Template Post Type: post
 <?php get_header() ?>
 
 <section class="page-section">
-    <div class="page-header__inner">
+<div class="page-header__inner solid">
+    <div class="fixed-container">
+        <h2><?php the_title()?></h2>
+    </div>
+</div>
+
+    <!-- <div class="page-header__inner">
         <div class="fixed-container">
             <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="page-section__content">

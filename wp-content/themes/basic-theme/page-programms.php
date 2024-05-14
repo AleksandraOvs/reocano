@@ -18,46 +18,19 @@ get_header(); ?>
     <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
                                 ?>>
         <div class="page-header__inner">
-        <?php
-        if (has_post_thumbnail()) { // условие, если есть миниатюра
-            the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
-        } 
-        ?>
-            <div class="fixed-container">
-                <h2 class="site-page__title toopacity white"> Авторские программы </h2>
-            </div>
+            <?php
+            if (has_post_thumbnail()) { // условие, если есть миниатюра
+                the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
+            }
+            ?>
         </div>
 
-        <div class="fixed-container">
+        <div class="fixed-container programms-container">
 
-        <?php
-            $args = array(
-                'post_type' => 'programms',
-                'publish' => true,
-                //'paged' => get_query_var('paged'),
-            );
-            query_posts($args);
-            if (have_posts()) : ?>
-                <ul class="programms__list">
-                    <?php while (have_posts()) : the_post(); ?>
-                        <li class="programms__list__item">
-                            <div class="programms__list__item__content">
-                                <h3 class="white"><?php the_title(); ?></h3>
-                                <div class="white programms__excerpt"><?php the_excerpt() ?>
-                                </div>
-                            </div>
-
-                            <div class="programms__list__item__more">
-                                <a href="<?php the_permalink() ?>" class="programms__more-button button">Узнать подробнее</a>
-                            </div>
+        <?php get_template_part('templates/programms'); ?>
 
 
-                        </li>
-                    <?php endwhile; ?>
-                </ul>
-            <?php endif; ?>
-
-            </div>
+        </div>
 
 
     </section>

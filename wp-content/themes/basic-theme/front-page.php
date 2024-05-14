@@ -4,11 +4,11 @@
 <section class="section-content">
     <?php the_content() ?>
 
-    <div class="section-programms">
+    <!-- <div class="section-programms">
         <div class="fixed-container">
-            <?php get_template_part('templates/programms') ?>
+            <?php //get_template_part('templates/programms') ?>
         </div>
-    </div>
+    </div> -->
 
     <div class="section-books background-grey">
         <div class="full-width-container">

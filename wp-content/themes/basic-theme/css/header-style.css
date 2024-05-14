@@ -4,7 +4,7 @@ styles for header theme basic
 
 :root {
     --black: #000000;
-    --green: #01AF34;
+    --green: rgb(170, 207, 151);
     --light-green: #a9c9b1;
     /* --dark-green: #476850; */
     --dark-green: #57665b;

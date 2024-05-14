@@ -2377,8 +2377,19 @@ ul.breadcrumbs__list {
 
 /*PAGE PROGRAMMS**/
 
-body.programms-template-default.single.single-programms,
-body.page-template.page-template-page-programms {
+h2#programms {
+    text-align: center;
+}
+
+.fixed-container.programms-container {
+    background: #fff;
+    padding: 40px;
+    margin-top: -30px;
+    backdrop-filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .2));
+}
+
+body.programms-template-default.single.single-programm {
     /* background: #000; */
     background: var(--dark-green);
 }
@@ -2473,6 +2484,15 @@ body.page-template.page-template-page-programms {
 
 .programms-posts__grid__item__summary .entry-post__button-more:hover{
     background: rgba(1, 175, 52, .4);
+}
+
+.page-header__inner.solid {
+    background: var(--dark-green);
+}
+
+.page-header__inner.solid .fixed-container h2{
+    text-align:center;
+    color: #fff;
 }
 
 @media (max-width: 1440px) {

@@ -2822,6 +2822,18 @@ body.programms-template-default.single.single-programms {
         display:block;
     }
 
+    .programms-thumb {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    .page-header__inner.solid.header-programms {
+        padding-bottom: 90px;
+    }
+
 }
 
 @media (max-width: 768px) {

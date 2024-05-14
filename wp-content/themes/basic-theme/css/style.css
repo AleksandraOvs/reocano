@@ -177,6 +177,10 @@ section.site-page {
     padding-bottom: 7%;
 }
 
+body.page-template-default.page {
+    background: var(--dark-green);
+}
+
 .site-page__content {
     padding: 40px 0;
 }

@@ -12,7 +12,7 @@
 
     <div class="section-books background-grey">
         <div class="full-width-container">
-            <?php get_template_part('templates/books') ?>
+            <?php //get_template_part('templates/books') ?>
         </div>
     </div>
 

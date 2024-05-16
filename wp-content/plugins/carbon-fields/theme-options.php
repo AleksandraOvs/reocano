@@ -106,13 +106,13 @@ Container::make('theme_options', 'Контакты')
                 
         ))
 
-        ->add_tab(__('Расчет доставки'), array (
+        ->add_tab(__('Купить книгу'), array (
 
-            Field::make('text', 'crb_delcalc_head', 'Заголовок окна')
+            Field::make('text', 'crb_buybook_head', 'Заголовок окна')
                 ->set_width(33),
-            Field::make('rich_text', 'crb_delcalc_desc', 'Описание')
+            Field::make('rich_text', 'crb_buybook_desc', 'Описание')
                 ->set_width(33),
-            Field::make('rich_text', 'crb_delcalc_code', 'html code / shortcode')
+            Field::make('rich_text', 'crb_buybook_code', 'html code / shortcode')
                 ->set_width(33),
             
     ));

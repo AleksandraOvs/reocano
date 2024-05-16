@@ -21,6 +21,23 @@ echo do_shortcode("$shcode"); ?>
 </div>
 
 
+<!-- попап для покупки книги -->
+
+<div id="popup-buybook" class="popup" style="display: none;">
+<?php 
+if ($popup_head = carbon_get_theme_option('crb_buybook_head')  ){
+	echo '<h3>' . $popup_head . '</h3>';
+	if ($popup_desc = carbon_get_theme_option('crb_buybook_desc')) : echo '<p class="popup-description">' . $popup_desc . '</p>'; endif;
+
+	//echo '<p>' . $popup_desc . '</p>';
+};
+?>
+<?php
+$shcode = carbon_get_theme_option('crb_buybook_code');
+echo do_shortcode("$shcode"); ?>
+</div>
+
+
 
 
 </main>

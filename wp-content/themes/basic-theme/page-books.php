@@ -41,18 +41,19 @@ get_header(); ?>
             if (have_posts()) : ?>
                 <ul class="books-archive__wrapper">
                     <?php while (have_posts()) : the_post(); ?>
-                    <div class="entry-post__books__item">
-                        <a class="book-link" href="<?php the_permalink() ?>">
+                    <li class="entry-post__books__item">
+                        <a class="book-link tobottom" href="<?php the_permalink() ?>">
                             <?php echo get_the_post_thumbnail() ?>
-
-                            <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
                         </a>
-                        <!-- <div class="entry-post__books__item__head">
-                            
-                        </div>    -->
-                        <h3><?php the_title(); ?></h3>
-                        <a class="button fill">Купить</a>
-                    </div>
+
+                        <div class="entry-post__books__item__content">
+                            <h3><?php the_title(); ?></h3>
+                            <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
+                            <a data-fancybox data-src="#popup-buybook" href="javascript:;" class="button fill">Купить</a>
+                            <a class="button__book-more" href="<?php the_permalink() ?>">Подробнее</a>
+                        </div>   
+                        
+            </li>
                     <?php endwhile; ?>
                 </ul>
             <?php endif; ?>

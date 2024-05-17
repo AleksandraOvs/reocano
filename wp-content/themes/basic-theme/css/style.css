@@ -484,7 +484,7 @@ img.hero-image {
 a.hero-button{
     position: relative;
     display: block;
-    background: rgba(1, 175, 52, .7);
+    background: var(--green);
     text-align: center;
     font-size: 16px;
     /* backdrop-filter: blur(20px); */
@@ -493,8 +493,8 @@ a.hero-button{
     font-family: 'Cakra';
     font-weight: 400;
     padding: 15px 20px;
-    color: #fff;
-    border: 1px solid rgba(1, 175, 52, .3);
+    color: #000;
+    border: 1px solid var(--green);
     width: 300px;
     transition: all .3s linear;
 }
@@ -3121,7 +3121,7 @@ body.programms-template-default.single.single-programms {
     } */
 
     section.section-hero {
-        padding-top: 30%;
+        padding-top: 0;
     }
 
     .page-header__inner {
